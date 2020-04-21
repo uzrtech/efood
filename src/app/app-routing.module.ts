@@ -1,3 +1,5 @@
+import { ProductComponent } from './product/product.component';
+import { ProductsComponent } from './products/products.component';
 import { CourComponent } from './cour/cour.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
@@ -14,6 +16,8 @@ const routes: Routes = [
   {path:'myaccount', component: MyaccountComponent},
   {path:'cart', component: CartComponent},
   {path:'about', component: AboutusComponent},
+  {path:'products', component: ProductsComponent},
+  {path:'product', component: ProductComponent},
   {path:'checkout', component: CheckoutComponent},
   { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) }
 ];

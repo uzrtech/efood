@@ -10,6 +10,8 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { WishlistComponent } from './myaccount/wishlist/wishlist.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { CourComponent } from './cour/cour.component';
+import { ProductsComponent } from './products/products.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { CourComponent } from './cour/cour.component';
     WishlistComponent,
     CheckoutComponent,
     CourComponent,
+    ProductsComponent,
+    ProductComponent,
   ],
   imports: [
     BrowserModule,
