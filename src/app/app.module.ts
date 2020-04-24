@@ -12,6 +12,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { CourComponent } from './cour/cour.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './product/product.component';
+import { TopheaderComponent } from './topheader/topheader.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ProductComponent } from './product/product.component';
     CourComponent,
     ProductsComponent,
     ProductComponent,
+    TopheaderComponent,
   ],
   imports: [
     BrowserModule,
