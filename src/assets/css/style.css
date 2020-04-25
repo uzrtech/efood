@@ -44,6 +44,11 @@ Author URI: http://themeforest.net/user/Ansonika/
   font-style: normal;
   font-display: swap;
 }
+
+:root {
+  --main-header-bg-color: #004dda;
+  --main-primary-color: #004dda;
+}
 [class*='header-']:before {
   display: inline-block;
   font-family: 'header_icons';
@@ -2360,7 +2365,7 @@ header .sticky_element {
   }
 }
 header.version_1 .main_header {
-  background-color: #004dda;
+  background-color: var(--main-header-bg-color);
 }
 header.version_1 .main_header a.phone_top {
   color: #fff;
