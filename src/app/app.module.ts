@@ -14,6 +14,7 @@ import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './product/product.component';
 import { TopheaderComponent } from './topheader/topheader.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SliderComponent } from './homepage/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ProductsComponent,
     ProductComponent,
     TopheaderComponent,
+    SliderComponent,
   ],
   imports: [
     BrowserModule,

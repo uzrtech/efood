@@ -8,37 +8,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 01. header css here */
-
-
-.picsum-img-wrapper img{
-    width: 100%;
-    height: 550px;
-}
 
 // Font Family
 $worksans: 'Work Sans',
@@ -490,6 +460,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
         right: 0;
     }
     & li {
+        list-style: none;
         & a {
             text-transform: capitalize;
             display: block;
@@ -554,7 +525,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
 
 .logo {
     & img {
-        max-width: 150px;
+        max-width: 100px;
         @media #{$large-mobile} {
             max-width: 120px;
         }
@@ -814,6 +785,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
                 display: inline-block;
                 & a {
                     text-transform: uppercase;
+                    color: black;
                     &:hover {
                         color: $secondary_color;
                     }
@@ -1117,6 +1089,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
                     top: 101%;
                     text-align: left;
                     & li {
+                        list-style: none;
                         & a {
                             font-size: 14px;
                             font-weight: 400;
@@ -1158,6 +1131,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
     display: flex;
     justify-content: space-between;
     &>li {
+        list-style: none;
         &>a {
             font-size: 15px;
             line-height: 24px;

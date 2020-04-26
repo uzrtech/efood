@@ -43,7 +43,7 @@
                   <div class="row align-items-center">
                       <div class="col-lg-2 col-md-3 col-sm-3 col-3">
                           <div class="logo">
-                              <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                              <a href="/"><img src="assets/img/site-logo.png" alt=""></a>
                           </div>
                       </div>
                       <div class="col-lg-10 col-md-6 col-sm-7 col-8">
@@ -99,18 +99,18 @@
                               <div class="header_account_area">
                                   <div class="header_account_list register">
                                       <ul>
-                                          <li><a href="login.html">Register</a></li>
+                                          <li><a routerLink="/auth/register">Register</a></li>
                                           <li><span>/</span></li>
-                                          <li><a href="login.html">Login</a></li>
+                                          <li><a routerLink="/auth">Login</a></li>
                                       </ul>
                                   </div>
                                   <div class="header_account_list header_wishlist">
-                                      <a href="wishlist.html"><span class="lnr lnr-heart"></span> <span class="item_count">3</span> </a>
+                                      <a routerLink="/wishlist"><span class="lnr lnr-heart"></span> <span class="item_count">3</span> </a>
                                   </div>
                                   <div class="header_account_list  mini_cart_wrapper">
-                                      <a href="javascript:void(0)"><span class="lnr lnr-cart"></span><span class="item_count">2</span></a>
+                                      <a routerLink="/cart"><span class="lnr lnr-cart"></span><span class="item_count">2</span></a>
                                       <!--mini cart-->
-                                      <div class="mini_cart">
+                                      <!-- <div class="mini_cart">
                                           <div class="cart_gallery">
                                               <div class="cart_close">
                                                   <div class="cart_text">
@@ -166,7 +166,7 @@
                                               </div>
 
                                           </div>
-                                      </div>
+                                      </div> -->
                                       <!--mini cart end-->
                                   </div>
                               </div>
@@ -311,13 +311,13 @@
                           <div class="main_menu menu_position">
                               <nav>
                                   <ul>
-                                      <li><a class="active" href="index.html">home<i class="fa fa-angle-down"></i></a>
-                                          <ul class="sub_menu">
+                                      <li><a class="active" href="/">home</a>
+                                          <!-- <ul class="sub_menu">
                                               <li><a href="index.html">Home shop 1</a></li>
                                               <li><a href="index-2.html">Home shop 2</a></li>
                                               <li><a href="index-3.html">Home shop 3</a></li>
                                               <li><a href="index-4.html">Home shop 4</a></li>
-                                          </ul>
+                                          </ul> -->
                                       </li>
                                       <li class="mega_items"><a href="shop.html">shop<i class="fa fa-angle-down"></i></a>
                                           <div class="mega_menu">
@@ -409,81 +409,3 @@
  
  
  
- 
- <ngb-carousel>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img src="assets/img/slides/slider-image-1.jpg" alt="Random first slide">
-      </div>
-      <div class="owl-slide cover" >
-        <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0, 0, 0, 0.5)">
-          <div class="container">
-          <div class="row justify-content-center justify-content-md-end">
-            <div class="col-lg-6 static">
-            <div class="slide-text text-right white">
-              <h2 class="owl-slide-animated owl-slide-title">Attack Air<br>Max 720 Sage Low</h2>
-              <p class="owl-slide-animated owl-slide-subtitle">
-              Limited items available at this price
-              </p>
-              <div class="owl-slide-animated owl-slide-cta"><a class="btn_1" href="listing-grid-1-full.html" role="button">Shop Now</a></div>
-            </div>
-            </div>
-          </div>
-          </div>
-        </div>
-        </div>
-      <div class="carousel-caption">
-      
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img src="assets/img/slides/slider-image-2.jpg" alt="Random second slide">
-      </div>
-      <div class="owl-slide cover" style="background-image: url(/assets/img/slides/slider-image-2.jpg);">
-        <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0, 0, 0, 0.5)">
-          <div class="container">
-          <div class="row justify-content-center justify-content-md-start">
-            <div class="col-lg-6 static">
-            <div class="slide-text white">
-              <h2 class="owl-slide-animated owl-slide-title">Attack Air<br>VaporMax Flyknit 3</h2>
-              <p class="owl-slide-animated owl-slide-subtitle">
-              Limited items available at this price
-              </p>
-              <div class="owl-slide-animated owl-slide-cta"><a class="btn_1" href="listing-grid-1-full.html" role="button">Shop Now</a></div>
-            </div>
-            </div>
-          </div>
-          </div>
-        </div>
-        </div>
-      <div class="carousel-caption">
-      
-      </div>
-    </ng-template>
-    <ng-template ngbSlide>
-      <div class="picsum-img-wrapper">
-        <img src="assets/img/slides/slider-image-3.jpg" alt="Random third slide">
-      </div>
-      <div class="owl-slide cover" style="background-image: url(/assets/img/slides/slider-image-1.jpg);">
-        <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(255, 255, 255, 0.5)">
-          <div class="container">
-          <div class="row justify-content-center justify-content-md-start">
-            <div class="col-lg-12 static">
-            <div class="slide-text text-center white">
-              <h2 class="owl-slide-animated owl-slide-title">Attack Air<br>Monarch IV SE</h2>
-              <p class="owl-slide-animated owl-slide-subtitle">
-              Lightweight cushioning and durable support with a Phylon midsole
-              </p>
-              <div class="owl-slide-animated owl-slide-cta"><a class="btn_1" href="listing-grid-1-full.html" role="button">Shop Now</a></div>
-            </div>
-            </div>
-          </div>
-          </div>
-        </div>
-        <!--/owl-slide-->
-        </div>
-      <div class="carousel-caption"> 
-      </div>
-    </ng-template>
-  </ngb-carousel>
