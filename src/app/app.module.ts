@@ -13,6 +13,7 @@ import { CourComponent } from './cour/cour.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './product/product.component';
 import { TopheaderComponent } from './topheader/topheader.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TopheaderComponent } from './topheader/topheader.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
