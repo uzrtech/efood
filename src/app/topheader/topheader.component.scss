@@ -33,7 +33,9 @@ $fonts_color9:#a7a7a7;
 $fonts_color10:#222;
 $fonts_color11:#2f2f2f;
 $fonts_color12:#ccc;
-$secondary_color: #40A944;
+
+//Primary Blue Color
+$secondary_color: #21B9E8;
 $secondary_color2: #80B82D;
 $secondary_color3: #FC8A35;
 $secondary_color4: #CF1F1F;
@@ -189,9 +191,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
         }
         & ul.sub-menu {
             padding-left: 20px;
-            & li {
-                & a {}
-            }
+           
         }
     }
 }
@@ -848,9 +848,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
 
 .mini_cart_wrapper {
     position: relative;
-    &:hover {
-        & .mini_cart {}
-    }
+    
 }
 
 .cart_close {
