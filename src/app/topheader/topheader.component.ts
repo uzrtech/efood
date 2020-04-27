@@ -12,12 +12,19 @@ export class TopheaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $("#carousel-home .owl-carousel .owl-item.active .owl-slide-animated").addClass("is-transitioned");
+    $("section").show();
     // $("#carousel-home .owl-carousel").on("initialized.owl.carousel", function() {
     //   setTimeout(function() {
     //     $("#carousel-home .owl-carousel .owl-item.active .owl-slide-animated").addClass("is-transitioned");
     //     $("section").show();
     //   }, 200);
     // });
+    $(".categori_toggle").on('click',function(){
+      $(".categories_menu_toggle").show();
+    })
+    
+ 
   }
 
 }

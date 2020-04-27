@@ -19,7 +19,8 @@ const routes: Routes = [
   {path:'products', component: ProductsComponent},
   {path:'product', component: ProductComponent},
   {path:'checkout', component: CheckoutComponent},
-  { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) }
+  { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },
+  { path: 'admin', loadChildren: () => import('./admin-panel/admin-panel.module').then(m => m.AdminPanelModule) }
 ];
 
 @NgModule({

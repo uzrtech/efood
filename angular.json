@@ -34,7 +34,8 @@
               "src/assets/css/checkout.css",
               "src/assets/css/custom.css"
             ],
-            "scripts": []
+            "scripts": [
+          ]
           },
           "configurations": {
             "production": {

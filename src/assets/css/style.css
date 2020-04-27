@@ -4533,6 +4533,7 @@ body.modal-open .mm-slideout {
 .grid_item figure {
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
   -moz-transition: all 0.7s ease;
   -o-transition: all 0.7s ease;
   -webkit-transition: all 0.7s ease;

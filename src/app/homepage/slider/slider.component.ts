@@ -10,6 +10,8 @@ export class SliderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    $("#carousel-home .owl-carousel .owl-item.active .owl-slide-animated").addClass("is-transitioned");
+    $("section").show();
   }
 
 }
