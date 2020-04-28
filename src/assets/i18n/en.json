@@ -1,0 +1,19 @@
+{
+    "home":
+    {
+        "home":"Home",
+        "fruits":"Fruits",
+        "vegetables":"Vegetables",
+        "grocery":"Grocery",
+        "items":"Items",
+        "select_category": "Select a Category",
+        "language":"Language",
+        "currency":"Currency",
+        "register":"Register",
+        "login":"Login",
+        "all_categories":"All Categories",
+        "support":"Customer Support"
+
+
+    }
+}

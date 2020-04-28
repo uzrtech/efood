@@ -9,9 +9,8 @@
                               <ul>
                                   <li class="language"><a href="#"> Language <i class="icon-right ion-ios-arrow-down"></i></a>
                                       <ul class="dropdown_language">
-                                          <li><a href="#">French</a></li>
-                                          <li><a href="#">Spanish</a></li>
-                                          <li><a href="#">Russian</a></li>
+                                          <li><a (click)="changeLangage('en')">English</a></li>
+                                          <li><a (click)="changeLangage('ar')" href="#">العربية</a></li>
                                       </ul>
                                   </li>
                                   <li class="currency"><a href="#"> Currency <i class="icon-right ion-ios-arrow-down"></i></a>
@@ -52,7 +51,7 @@
                                   <form action="#">
                                       <div class="hover_category">
                                           <select class="select_option" name="select" id="categori2" style="display: none;">
-                                              <option selected="" value="1">Select a categories</option>
+                                              <option selected="" value="1" translate>home.select_category</option>
                                               <option value="2">Accessories</option>
                                               <option value="3">Accessories &amp; More</option>
                                               <option value="4">Butters &amp; Eggs</option>
@@ -69,7 +68,7 @@
                                               <option value="15">Watchs</option>
                                               <option value="16">Electronic</option>
                                           </select>
-                                          <div class="nice-select select_option" tabindex="0"><span class="current">Select a categories</span>
+                                          <div class="nice-select select_option" tabindex="0"><span class="current" translate>home.select_category</span>
                                               <ul class="list">
                                                   <li data-value="1" class="option selected">Select a categories</li>
                                                   <li data-value="2" class="option">Accessories</li>
@@ -99,9 +98,9 @@
                               <div class="header_account_area">
                                   <div class="header_account_list register">
                                       <ul>
-                                          <li><a routerLink="/auth/register">Register</a></li>
+                                          <li><a routerLink="/auth/register" translate>home.register</a></li>
                                           <li><span>/</span></li>
-                                          <li><a routerLink="/auth">Login</a></li>
+                                          <li><a routerLink="/auth" translate>home.login</a></li>
                                       </ul>
                                   </div>
                                   <div class="header_account_list header_wishlist">
@@ -186,7 +185,7 @@
                           <div class="categories_menu">
                               <div class="categories_title">
                                <h6 style="display: inline; color: white; font-weight: bold;"> <span class="lnr lnr-menu"></span></h6>
-                                  <h2 style="display: inline;" class="categori_toggle">All Cattegories</h2>
+                                  <h2 style="display: inline;" class="categori_toggle" translate="home.all_categories"></h2>
                               </div>
                               <div class="categories_menu_toggle">
                                   <ul>
@@ -316,7 +315,7 @@
                           <div class="main_menu menu_position">
                               <nav>
                                   <ul>
-                                      <li><a class="active" routerLink="/">home</a>
+                                      <li><a class="active" routerLink="/" translate>home.home</a>
                                           <!-- <ul class="sub_menu">
                                               <li><a href="index.html">Home shop 1</a></li>
                                               <li><a href="index-2.html">Home shop 2</a></li>
@@ -357,13 +356,13 @@
                                               </ul>
                                           </div>
                                       </li> -->
-                                      <li><a routerLink="/">Fresh Fruits</a>
+                                      <li><a routerLink="/" translate>home.fruits</a>
                                       </li>
-                                      <li><a routerLink="/">Vegetables</a>
+                                      <li><a routerLink="/" translate>home.vegetables</a>
                                       </li>
-                                      <li><a routerLink="/">Grocery</a>
+                                      <li><a routerLink="/" translate>home.grocery</a>
                                       </li>
-                                      <li><a href="/">Items</a></li>
+                                      <li><a href="/" translate>home.items</a></li>
                                   </ul>
                               </nav>
                           </div>
@@ -371,7 +370,7 @@
                       </div>
                       <div class="col-lg-3">
                           <div class="call-support">
-                              <p><a href="tel:(08)23456789">(08) 23 456 789</a> Customer Support</p>
+                              <p><a href="tel:(08)23456789">(08) 23 456 789</a><b translate>home.support</b></p>
                           </div>
                       </div>
                   </div>

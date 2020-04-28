@@ -1,0 +1,17 @@
+{
+    "home":
+    {
+        "home":"الصفحة الرئيسية",
+        "fruits":"الفاكهة",
+        "vegetables":"خضروات",
+        "grocery":"بقالة",
+        "items":"العناصر",
+        "select_category": "اختر تصنيف",
+        "language":"لغة",
+        "currency":"عملة",
+        "register":"تسجيل",
+        "login":"دخول",
+        "all_categories":"التصنيفات",
+        "support":"دعم العملاء"
+    }
+}

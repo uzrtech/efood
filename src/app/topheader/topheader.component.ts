@@ -1,15 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
-import {ViewChild, ElementRef, AfterViewInit} from '@angular/core';
+import { TranslateService } from "@ngx-translate/core";
 @Component({
   selector: 'app-topheader',
   templateUrl: './topheader.component.html',
   styleUrls: ['./topheader.component.scss']
 })
 export class TopheaderComponent implements OnInit {
-  @ViewChild('selectElem') el:ElementRef;
 
-  constructor() { }
+ constructor(private translateService: TranslateService) { this.translateService.setDefaultLang('en');}
 
   ngOnInit(): void {
     $("#carousel-home .owl-carousel .owl-item.active .owl-slide-animated").addClass("is-transitioned");
@@ -25,6 +24,10 @@ export class TopheaderComponent implements OnInit {
     })
     
  
+  }
+  changeLangage(lang: string) {
+    this.translateService.setDefaultLang(lang);
+    this.translateService.use(lang);
   }
 
 }

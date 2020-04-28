@@ -15,7 +15,13 @@ import { ProductComponent } from './product/product.component';
 import { TopheaderComponent } from './topheader/topheader.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SliderComponent } from './homepage/slider/slider.component';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader} from "@ngx-translate/http-loader";
+import { HttpClientModule, HttpClient } from "@angular/common/http";
 
+export function HttpLoaderFactory(http : HttpClient){
+  return new TranslateHttpLoader(http);
+} 
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +40,20 @@ import { SliderComponent } from './homepage/slider/slider.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'en',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory ,
+        deps: [HttpClient]
+
+      }
+
+    })
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
