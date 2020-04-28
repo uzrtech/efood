@@ -1395,6 +1395,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
                             }
                         }
                         &.menu_item_children {
+                            list-style: none;
                             &>a {
                                 @media #{$tablet-device} {
                                     text-transform: capitalize;
@@ -1416,7 +1417,9 @@ $small-mobile: 'only screen and (max-width: 479px)';
 .categories_menu_toggle {
     & ul {
         & li {
+            list-style: none;
             &.menu_item_children {
+                list-style: none;
                 &>a {
                     @media #{$tablet-device} {
                         position: relative;
@@ -1536,7 +1539,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
 
 .categories_menu_toggle ul li.has-sub>a::before {
     position: absolute;
-    content: "\f055";
+    // content: "\f055";
     font-family: FontAwesome;
     top: 0;
     right: 20px;

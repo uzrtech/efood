@@ -20,8 +20,8 @@ export class TopheaderComponent implements OnInit {
     //     $("section").show();
     //   }, 200);
     // });
-    $(".categori_toggle").on('click',function(){
-      $(".categories_menu_toggle").show();
+    $(".categories_title").on('click',function(){
+      $(".categories_menu_toggle").toggle();
     })
     
  
