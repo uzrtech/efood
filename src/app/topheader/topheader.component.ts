@@ -8,26 +8,29 @@ import { TranslateService } from "@ngx-translate/core";
 })
 export class TopheaderComponent implements OnInit {
 
- constructor(private translateService: TranslateService) { this.translateService.setDefaultLang('en');}
+public is_rtl: Boolean = false;
+constructor(private translateService: TranslateService) { this.translateService.setDefaultLang('en');}
 
-  ngOnInit(): void {
-    $("#carousel-home .owl-carousel .owl-item.active .owl-slide-animated").addClass("is-transitioned");
-    $("section").show();
-    // $("#carousel-home .owl-carousel").on("initialized.owl.carousel", function() {
-    //   setTimeout(function() {
-    //     $("#carousel-home .owl-carousel .owl-item.active .owl-slide-animated").addClass("is-transitioned");
-    //     $("section").show();
-    //   }, 200);
-    // });
-    $(".categories_title").on('click',function(){
-      $(".categories_menu_toggle").toggle();
-    })
+ngOnInit(): void {
+  $("#carousel-home .owl-carousel .owl-item.active .owl-slide-animated").addClass("is-transitioned");
+  $("section").show();
+  // $("#carousel-home .owl-carousel").on("initialized.owl.carousel", function() {
+  //   setTimeout(function() {
+  //     $("#carousel-home .owl-carousel .owl-item.active .owl-slide-animated").addClass("is-transitioned");
+  //     $("section").show();
+  //   }, 200);
+  // });
+  $(".categories_title").on('click',function(){
+    $(".categories_menu_toggle").toggle();
+  })
     
  
   }
   changeLangage(lang: string) {
     this.translateService.setDefaultLang(lang);
     this.translateService.use(lang);
+    this.is_rtl = this.translateService.currentLang=="ar"? true : false;
+    
   }
 
 }

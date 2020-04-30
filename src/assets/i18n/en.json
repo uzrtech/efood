@@ -2,6 +2,14 @@
     "home":
     {
         "home":"Home",
+        "about":"Home",
+        "faq":"FAQ",
+        "help":"Help",
+        "account":"Account",
+        "fresh_fruits":"Fresh Fruits",
+        "quick_links":"Quick Links",
+        "contact":"Contact",
+        "keep_in_touch":"Keep In Touch",
         "fruits":"Fruits",
         "vegetables":"Vegetables",
         "grocery":"Grocery",
@@ -12,8 +20,37 @@
         "register":"Register",
         "login":"Login",
         "all_categories":"All Categories",
-        "support":"Customer Support"
+        "support":"Customer Support",
+        "follow_us":"Follow Us",
+        "shop_now":"Shop Now",
+        "products":"Products",
+        "top_selling":"Top Selling",
+        "top_selling_products":"Top Selling Products",
+        "top_trending":"Top Trending",
+        "top_trending_items":"Top Trending Items",
+        "feature_products":"Feature Products",
+        "feature_items":"Feature Items"
 
 
+    },
+    "category":{
+        "categories":"Categories",
+        "clothes": "Clothes",
+        "electronics":"Electronics",
+        "furniture":"Furniture",
+        "glasses":"Glasses",
+        "shoes":"Shoes",
+        "watches":"Watches",
+
+
+
+        "meat":"Meat", 
+        "butter":"Butter",
+        "milk":"Milk",
+        "oil":"Oil",
+        "bread":"Bread",
+        "jam":"Jam",
+        "frozen_food":"Frozen Food",
+        "fruits":"Fruits"
     }
 }

@@ -2,6 +2,14 @@
     "home":
     {
         "home":"الصفحة الرئيسية",
+        "about":"حول",
+        "faq":"التعليمات",
+        "help":"مساعدة",
+        "account":"الحساب",
+        "fresh_fruits":"فواكه طازجة",
+        "quick_links":"روابط سريعة",
+        "contact":"اتصل",
+        "keep_in_touch":"أبق على اتصال",
         "fruits":"الفاكهة",
         "vegetables":"خضروات",
         "grocery":"بقالة",
@@ -12,6 +20,35 @@
         "register":"تسجيل",
         "login":"دخول",
         "all_categories":"التصنيفات",
-        "support":"دعم العملاء"
+        "support":"دعم العملاء",
+        "follow_us":"تابعنا",
+        "shop_now":"تسوق الآن",
+        "products":"منتجات",
+        "top_selling":"الأكثر مبيعا",
+        "top_selling_products":"المنتجات الأكثر مبيعًا",
+        "top_trending":"الأكثر رواجًا",
+        "top_trending_items":"العناصر الأكثر رواجًا",
+        "feature_products":"المنتجات المميزة",
+        "feature_items":"عناصر الميزة"
+    },
+    "category":{
+        "categories":"التصنيفات",
+        "clothes": "ملابس",
+        "electronics":"إلكترونيات",
+        "furniture":"أثاث المنزل",
+        "glasses":"نظارات",
+        "shoes":"أحذية",
+        "watches":"ساعات",
+
+
+
+        "meat":"لحم", 
+        "butter":"زبدة",
+        "milk":"حليب",
+        "oil":"نفط",
+        "bread":"خبز",
+        "jam":"مربى",
+        "frozen_food":"أغذية مجمدة",
+        "fruits":"الفاكهة"
     }
 }

@@ -1,3 +1,4 @@
+import { HomeService } from './../home.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit {
 
-  constructor() { }
+  constructor(private HomeService:HomeService) { }
 
+  Products=[];
   ngOnInit(): void {
+    this.Products=this.HomeService.GetProducts();
   }
 
 }
