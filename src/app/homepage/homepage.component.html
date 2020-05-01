@@ -62,9 +62,7 @@
                 </div>
               </div> -->
               <!-- /col -->
-            
-              <!-- /col -->
-              <div *ngFor="let Product of Products" class="col-6 col-md-4 col-xl-3">
+              <div *ngFor="let Product of Products"  class="col-6 col-md-4 col-xl-3">
                 <div class="grid_item">
                   <span class="ribbon hot" translate="category.fruits"></span>
                   <figure>
@@ -86,6 +84,82 @@
                 </div>
                 <!-- /grid_item -->
               </div>
+            
+              <!-- /col -->
+              <div  class="col-6 col-md-4 col-xl-3">
+                <div class="grid_item">
+                  <span class="ribbon hot" translate="category.grocery"></span>
+                  <figure>
+                    <a [routerLink]="['/product']">
+                      <img class="img-fluid lazy" src="assets/img/products/olive-oil.jpg"  alt="">
+                      <img class="img-fluid lazy" src="assets/img/products/olive-oil.jpg" alt="">
+                    </a>
+                  </figure>
+                  <a [routerLink]="['/product']">
+                    <h3 translate="category.olive_oil"></h3>
+                  </a>
+                  <div class="price_box">
+                    <span class="new_price">$100</span>
+                  </div>
+                  <ul>
+                    <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
+                    <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
+                  </ul>
+                </div>
+                <!-- /grid_item -->
+              </div>
+
+
+              <div  class="col-6 col-md-4 col-xl-3">
+                <div class="grid_item">
+                  <span class="ribbon hot" translate="category.fruits"></span>
+                  <figure>
+                    <a [routerLink]="['/product']">
+                      <img class="img-fluid lazy" src="assets/img/products/pomegranate.jpg"  alt="">
+                      <img class="img-fluid lazy" src="assets/img/products/pomegranate.jpg" alt="">
+                    </a>
+                  </figure>
+                  <a [routerLink]="['/product']">
+                    <h3 translate="category.pomegranate"></h3>
+                  </a>
+                  <div class="price_box">
+                    <span class="new_price">$80</span>
+                  </div>
+                  <ul>
+                    <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
+                    <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
+                  </ul>
+                </div>
+                <!-- /grid_item -->
+              </div>
+
+
+              <div  class="col-6 col-md-4 col-xl-3">
+                <div class="grid_item">
+                  <span class="ribbon hot" translate="home.vegetables"></span>
+                  <figure>
+                    <a [routerLink]="['/product']">
+                      <img class="img-fluid lazy" src="assets/img/products/tomatoes.jpg"  alt="">
+                      <img class="img-fluid lazy" src="assets/img/products/tomatoes.jpg" alt="">
+                    </a>
+                  </figure>
+                  <a [routerLink]="['/product']">
+                    <h3 translate="category.tomato"></h3>
+                  </a>
+                  <div class="price_box">
+                    <span class="new_price">$70</span>
+                  </div>
+                  <ul>
+                    <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
+                    <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
+                  </ul>
+                </div>
+                <!-- /grid_item -->
+              </div>
+
+
+              
+
               <!-- /col -->
             </div>
             <!-- /row -->
@@ -103,12 +177,12 @@
        
             
               <!-- /col -->
-              <div *ngFor="let Product of Products" class="col-6 col-md-4 col-xl-3">
+              <div *ngFor="let Product of Products"  class="col-6 col-md-4 col-xl-3">
                 <div class="grid_item">
                   <span class="ribbon hot" translate="category.fruits"></span>
                   <figure>
                     <a [routerLink]="['/product']">
-                      <img class="img-fluid lazy" [src]="Product.image" alt="">
+                      <img class="img-fluid lazy" [src]="Product.image"  alt="">
                       <img class="img-fluid lazy" [src]="Product.image" alt="">
                     </a>
                   </figure>
@@ -117,6 +191,78 @@
                   </a>
                   <div class="price_box">
                     <span class="new_price">${{Product.price}}</span>
+                  </div>
+                  <ul>
+                    <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
+                    <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
+                  </ul>
+                </div>
+                <!-- /grid_item -->
+              </div>
+            
+              <!-- /col -->
+              <div  class="col-6 col-md-4 col-xl-3">
+                <div class="grid_item">
+                  <span class="ribbon hot" translate="category.grocery"></span>
+                  <figure>
+                    <a [routerLink]="['/product']">
+                      <img class="img-fluid lazy" src="assets/img/products/olive-oil.jpg"  alt="">
+                      <img class="img-fluid lazy" src="assets/img/products/olive-oil.jpg" alt="">
+                    </a>
+                  </figure>
+                  <a [routerLink]="['/product']">
+                    <h3 translate="category.olive_oil"></h3>
+                  </a>
+                  <div class="price_box">
+                    <span class="new_price">$100</span>
+                  </div>
+                  <ul>
+                    <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
+                    <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
+                  </ul>
+                </div>
+                <!-- /grid_item -->
+              </div>
+
+
+              <div  class="col-6 col-md-4 col-xl-3">
+                <div class="grid_item">
+                  <span class="ribbon hot" translate="category.fruits"></span>
+                  <figure>
+                    <a [routerLink]="['/product']">
+                      <img class="img-fluid lazy" src="assets/img/products/pomegranate.jpg"  alt="">
+                      <img class="img-fluid lazy" src="assets/img/products/pomegranate.jpg" alt="">
+                    </a>
+                  </figure>
+                  <a [routerLink]="['/product']">
+                    <h3 translate="category.pomegranate"></h3>
+                  </a>
+                  <div class="price_box">
+                    <span class="new_price">$80</span>
+                  </div>
+                  <ul>
+                    <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
+                    <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
+                  </ul>
+                </div>
+                <!-- /grid_item -->
+              </div>
+
+
+              <div  class="col-6 col-md-4 col-xl-3">
+                <div class="grid_item">
+                  <span class="ribbon hot" translate="home.vegetables"></span>
+                  <figure>
+                    <a [routerLink]="['/product']">
+                      <img class="img-fluid lazy" src="assets/img/products/tomatoes.jpg"  alt="">
+                      <img class="img-fluid lazy" src="assets/img/products/tomatoes.jpg" alt="">
+                    </a>
+                  </figure>
+                  <a [routerLink]="['/product']">
+                    <h3 translate="category.tomato"></h3>
+                  </a>
+                  <div class="price_box">
+                    <span class="new_price">$70</span>
                   </div>
                   <ul>
                     <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
@@ -143,12 +289,12 @@
        
             
               <!-- /col -->
-              <div *ngFor="let Product of Products" class="col-6 col-md-4 col-xl-3">
+              <div *ngFor="let Product of Products"  class="col-6 col-md-4 col-xl-3">
                 <div class="grid_item">
                   <span class="ribbon hot" translate="category.fruits"></span>
                   <figure>
                     <a [routerLink]="['/product']">
-                      <img class="img-fluid lazy" [src]="Product.image" alt="">
+                      <img class="img-fluid lazy" [src]="Product.image"  alt="">
                       <img class="img-fluid lazy" [src]="Product.image" alt="">
                     </a>
                   </figure>
@@ -157,6 +303,78 @@
                   </a>
                   <div class="price_box">
                     <span class="new_price">${{Product.price}}</span>
+                  </div>
+                  <ul>
+                    <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
+                    <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
+                  </ul>
+                </div>
+                <!-- /grid_item -->
+              </div>
+            
+              <!-- /col -->
+              <div  class="col-6 col-md-4 col-xl-3">
+                <div class="grid_item">
+                  <span class="ribbon hot" translate="category.grocery"></span>
+                  <figure>
+                    <a [routerLink]="['/product']">
+                      <img class="img-fluid lazy" src="assets/img/products/olive-oil.jpg"  alt="">
+                      <img class="img-fluid lazy" src="assets/img/products/olive-oil.jpg" alt="">
+                    </a>
+                  </figure>
+                  <a [routerLink]="['/product']">
+                    <h3 translate="category.olive_oil"></h3>
+                  </a>
+                  <div class="price_box">
+                    <span class="new_price">$100</span>
+                  </div>
+                  <ul>
+                    <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
+                    <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
+                  </ul>
+                </div>
+                <!-- /grid_item -->
+              </div>
+
+
+              <div  class="col-6 col-md-4 col-xl-3">
+                <div class="grid_item">
+                  <span class="ribbon hot" translate="category.fruits"></span>
+                  <figure>
+                    <a [routerLink]="['/product']">
+                      <img class="img-fluid lazy" src="assets/img/products/pomegranate.jpg"  alt="">
+                      <img class="img-fluid lazy" src="assets/img/products/pomegranate.jpg" alt="">
+                    </a>
+                  </figure>
+                  <a [routerLink]="['/product']">
+                    <h3 translate="category.pomegranate"></h3>
+                  </a>
+                  <div class="price_box">
+                    <span class="new_price">$80</span>
+                  </div>
+                  <ul>
+                    <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
+                    <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
+                  </ul>
+                </div>
+                <!-- /grid_item -->
+              </div>
+
+
+              <div  class="col-6 col-md-4 col-xl-3">
+                <div class="grid_item">
+                  <span class="ribbon hot" translate="home.vegetables"></span>
+                  <figure>
+                    <a [routerLink]="['/product']">
+                      <img class="img-fluid lazy" src="assets/img/products/tomatoes.jpg"  alt="">
+                      <img class="img-fluid lazy" src="assets/img/products/tomatoes.jpg" alt="">
+                    </a>
+                  </figure>
+                  <a [routerLink]="['/product']">
+                    <h3 translate="category.tomato"></h3>
+                  </a>
+                  <div class="price_box">
+                    <span class="new_price">$70</span>
                   </div>
                   <ul>
                     <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
