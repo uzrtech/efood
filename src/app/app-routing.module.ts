@@ -1,3 +1,4 @@
+import { WishlistComponent } from './myaccount/wishlist/wishlist.component';
 import { ProductComponent } from './product/product.component';
 import { ProductsComponent } from './products/products.component';
 import { CourComponent } from './cour/cour.component';
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path:'myaccount', component: MyaccountComponent},
   {path:'cart', component: CartComponent},
   {path:'about', component: AboutusComponent},
+  {path:'wishlist', component: WishlistComponent},
   {path:'products', component: ProductsComponent},
   {path:'product', component: ProductComponent},
   {path:'checkout', component: CheckoutComponent},

@@ -41,6 +41,10 @@
         "watches":"ساعات",
 
 
+        "orange":"البرتقالي", 
+        "olive_il":"زيت الزيتون", 
+        "pomegranate":"رمان", 
+
 
         "meat":"لحم", 
         "butter":"زبدة",
@@ -50,5 +54,45 @@
         "jam":"مربى",
         "frozen_food":"أغذية مجمدة",
         "fruits":"الفاكهة"
+    },
+
+
+    "auth":{
+        "login":"تسجيل الدخول",
+        "register":"تسجيل",
+        "email":"البريد الإلكتروني",
+        "name":"اسم",
+        "password":"كلمه السر",
+        "remember":"تذكرنى",
+        "forgot":"هل نسيت كلمة المرور",
+        "address":"عنوان",
+        "city":"مدينة",
+        "required":"الحقول المطلوبة",
+
+        "password_change":"تغيير كلمة السر",
+        "new_password":"كلمة السر الجديدة",
+        "current_password":"كلمة المرور الحالي",
+        "confirm_password":"تأكيد كلمة المرور",
+        "save":"حفظ",
+
+        "find_locations":"البحث عن مواقع ",
+        "secure-payments":"المدفوعات الآمنة", 
+        "data_protection":"حماية البيانات" 
+    },
+    "wishlist":{
+        "your_wishlist":"قائمة امنياتك",
+        "recent":"تم شراؤها مؤخرا"
+    },
+    "account":{
+        "dashboard":"لوحة القيادة",
+        "download":"تحميل",
+        "orders":"الطلب",
+        "payment":"طريقة الدفع او السداد",
+        "address":"عنوان",
+        "account":"الحساب",
+        "logout":"تسجيل خروج",
+        "pending":"قيد الانتظار",
+        "approved":"وافق",
+        "view":"رأي"
     }
 }

@@ -8,15 +8,14 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-4">
                             <div class="myaccount-tab-menu nav" role="tablist">
-                                <a href="#dashboad" class="active" data-toggle="tab"><i class="fa fa-dashboard"></i>
-                                    Dashboard</a>
-                                <a href="#orders" data-toggle="tab"><i class="fa fa-cart-arrow-down"></i> Orders</a>
-                                <a href="#download" data-toggle="tab"><i class="fa fa-cloud-download"></i> Download</a>
-                                <a href="#payment-method" data-toggle="tab"><i class="fa fa-credit-card"></i> Payment
-                                    Method</a>
-                                <a href="#address-edit" data-toggle="tab"><i class="fa fa-map-marker"></i> address</a>
-                                <a href="#account-info" data-toggle="tab"><i class="fa fa-user"></i> Account Details</a>
-                                <a href="login-register.html"><i class="fa fa-sign-out"></i> Logout</a>
+                                <a href="#dashboad" class="active" data-toggle="tab" translate="account.dashboard"><i class="fa fa-dashboard"></i>
+                                    </a>
+                                <a href="#orders" data-toggle="tab" translate="account.orders"><i class="fa fa-cart-arrow-down"></i></a>
+                                <a href="#download" data-toggle="tab" translate="account.download"><i class="fa fa-cloud-download"></i></a>
+                                <a href="#payment-method" data-toggle="tab" translate="account.payment"><i class="fa fa-credit-card"></i></a>
+                                <a href="#address-edit" data-toggle="tab" translate="account.address"><i class="fa fa-map-marker"></i></a>
+                                <a href="#account-info" data-toggle="tab" translate="account.account"><i class="fa fa-user"></i></a>
+                                <a href="login-register.html" translate="account.logout"><i class="fa fa-sign-out"></i></a>
                             </div>
                         </div>
                         <!-- My Account Tab Menu End -->
@@ -142,48 +141,49 @@
                                                 <div class="row">
                                                     <div class="col-lg-6">
                                                         <div class="single-input-item">
-                                                            <label for="first-name" class="required">First Name</label>
+                                                            <label for="first-name" class="required" translate="auth.name"></label>
                                                             <input type="text" id="first-name" />
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-6">
+                                                    <div class="single-input-item">
+                                                        <label for="email" class="required" translate="auth.email"></label>
+                                                        <input type="email" id="email" />
+                                                    </div>
+                                                    <!-- <div class="col-lg-6">
                                                         <div class="single-input-item">
                                                             <label for="last-name" class="required">Last Name</label>
                                                             <input type="text" id="last-name" />
                                                         </div>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
-                                                <div class="single-input-item">
+                                                <!-- <div class="single-input-item">
                                                     <label for="display-name" class="required">Display Name</label>
                                                     <input type="text" id="display-name" />
-                                                </div>
-                                                <div class="single-input-item">
-                                                    <label for="email" class="required">Email Addres</label>
-                                                    <input type="email" id="email" />
-                                                </div>
+                                                </div> -->
+                                               
                                                 <fieldset>
-                                                    <legend>Password change</legend>
+                                                    <legend translate="auth.password_change"></legend>
                                                     <div class="single-input-item">
-                                                        <label for="current-pwd" class="required">Current Password</label>
+                                                        <label for="current-pwd" class="required" translate="auth.current_password"></label>
                                                         <input type="password" id="current-pwd" />
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-lg-6">
                                                             <div class="single-input-item">
-                                                                <label for="new-pwd" class="required">New Password</label>
+                                                                <label for="new-pwd" class="required" translate="auth.new_password"></label>
                                                                 <input type="password" id="new-pwd" />
                                                             </div>
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <div class="single-input-item">
-                                                                <label for="confirm-pwd" class="required">Confirm Password</label>
+                                                                <label for="confirm-pwd" class="required" translate="auth.confirm_password"></label>
                                                                 <input type="password" id="confirm-pwd" />
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </fieldset>
                                                 <div class="single-input-item">
-                                                    <button class="check-btn sqr-btn ">Save Changes</button>
+                                                    <button class="check-btn sqr-btn " translate="auth.save"></button>
                                                 </div>
                                             </form>
                                         </div>

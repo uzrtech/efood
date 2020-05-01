@@ -1,1 +1,47 @@
-<p>wishlist works!</p>
+<div class="container margin_30">
+
+
+
+<div class="page_header">
+    <!-- <div class="breadcrumbs">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Category</a></li>
+            <li>Page active</li>
+        </ul>
+    </div> -->
+    <h1 translate="wishlist.your_wishlist"></h1>
+</div>
+
+
+  <!-- /container -->
+  <div class="container">
+    <div class="row small-gutters">
+      <!-- /col -->
+      <div *ngFor="let Product of Products" class="col-6 col-md-6 col-xl-4">
+        <div class="grid_item">
+          <span class="ribbon hot">{{Product.category}}</span>
+          <figure>
+            <a [routerLink]="['/product']">
+              <img class="img-fluid lazy" [src]="Product.image" alt="">
+              <img class="img-fluid lazy" [src]="Product.image" alt="">
+            </a>
+          </figure>
+          <a [routerLink]="['/product']">
+            <h3>{{Product.name}}</h3>
+          </a>
+          <div class="price_box">
+            <span class="new_price">${{Product.price}}</span>
+          </div>
+          <ul>
+            <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a></li>
+            <li><a href="#0" class="tooltip-1" data-toggle="tooltip" data-placement="left" title="Add to cart"><i class="ti-shopping-cart"></i><span>Add to cart</span></a></li>
+          </ul>
+        </div>
+        <!-- /grid_item -->
+      </div>
+      <!-- /col -->
+    </div>
+    <!-- /row -->
+  </div>
+</div>

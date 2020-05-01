@@ -43,6 +43,11 @@
         "watches":"Watches",
 
 
+        "orange":"Orange", 
+        "olive_il":"Olive Oil", 
+        "pomegranate":"Pomegranate", 
+
+
 
         "meat":"Meat", 
         "butter":"Butter",
@@ -52,5 +57,45 @@
         "jam":"Jam",
         "frozen_food":"Frozen Food",
         "fruits":"Fruits"
+    },
+
+    "auth":{
+        "login":"Login",
+        "register":"Register",
+        "email":"Email",
+        "name":"Name",
+        "password":"Password",
+        "remember":"Remember Me",
+        "forgot":"Forgot Password",
+        "address":"Address",
+        "city":"City",
+        "required":"Required Fields",
+
+        "password_change":"Password Change",
+        "new_password":"New Password",
+        "current_password":"Current Password",
+        "confirm_password":"Confirm Password",
+        "save":"Save",
+
+        "find_locations":"Find Locations ",
+        "secure-payments":"Secure Payments", 
+        "data_protection":"Data Protection" 
+    },
+    "wishlist":{
+        "your_wishlist":"Your Wishlist",
+        "recent":"Recently Purchased"
+    },
+
+    "account":{
+        "dashboard":"Dashboard",
+        "download":"Download",
+        "orders":"Orders",
+        "payment":"Payment Method",
+        "address":"Address",
+        "account":"Account",
+        "logout":"Logout",
+        "pending":"Pending",
+        "approved":"Approved",
+        "view":"View"
     }
 }

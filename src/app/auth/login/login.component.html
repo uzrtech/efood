@@ -1,7 +1,7 @@
 
     <div class="col-xl-12 col-lg-12 col-md-12">
         <div class="box_account">
-            <h3 class="client">Already Client</h3>
+            <h3 class="client" translate="auth.login"></h3>
             <div class="form_container">
                 <div class="row no-gutters">
                     <div class="col-lg-6 pr-lg-1">
@@ -20,15 +20,15 @@
                 </div>
                 <div class="clearfix add_bottom_15">
                     <div class="checkboxes float-left">
-                        <label class="container_check">Remember me
+                        <label class="container_check" translate="auth.remeber">
                             <input type="checkbox">
                             <span class="checkmark"></span>
                         </label>
                     </div>
-                    <div class="float-right"><a id="forgot" href="javascript:void(0);">Lost Password?</a></div>
+                    <div class="float-right"><a id="forgot" href="javascript:void(0);" translate="auth.forgot"></a></div>
                 </div>
                 <div class="text-center"><input [routerLink]="[ '/' ]" type="submit" value="Log In" class="btn_1 full-width"></div>
-                <div class="text-center"><a [routerLink]="[ '/auth/register' ]" type="button" hre class="btn btn-primary btn-block btn_2 full-width">Register</a></div>
+                <div class="text-center"><a [routerLink]="[ '/auth/register' ]" type="button" hre class="btn btn-primary btn-block btn_2 full-width" translate="auth.register">Register</a></div>
                 <div id="forgot_pw">
                     <div class="form-group">
                         <input type="email" class="form-control" name="email_forgot" id="email_forgot" placeholder="Type your email">
@@ -43,17 +43,17 @@
         <div class="row">
             <div class="col-md-6 d-none d-lg-block">
                 <ul class="list_ok">
-                    <li>Find Locations</li>
-                    <li>Quality Location check</li>
-                    <li>Data Protection</li>
+                    <li translate="auth.find_locations">Find Locations</li>
+                    <li translate="auth.secure_payments">Secure Payments</li>
+                    <li translate="auth.data_protection">Data Protection</li>
                 </ul>
             </div>
-            <div class="col-md-6 d-none d-lg-block">
+            <!-- <div class="col-md-6 d-none d-lg-block">
                 <ul class="list_ok">
-                    <li>Secure Payments</li>
                     <li>H24 Support</li>
+                    <li>Quality Location check</li>
                 </ul>
-            </div>
+            </div> -->
         </div>
         <!-- /row -->
     </div>
