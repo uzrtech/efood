@@ -97,5 +97,12 @@
         "pending":"Pending",
         "approved":"Approved",
         "view":"View"
+    },
+
+    "cart":{
+        "product":"Product",
+        "price":"Price",
+        "quantity":"Quantity",
+        "subtotal":"Subtotal"
     }
 }

@@ -94,5 +94,12 @@
         "pending":"قيد الانتظار",
         "approved":"وافق",
         "view":"رأي"
+    },
+
+    "cart":{
+        "product":"المنتج",
+        "price":"السعر",
+        "quantity":"كمية",
+        "subtotal":"المجموع الفرعي"
     }
 }
