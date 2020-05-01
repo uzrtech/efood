@@ -14,6 +14,9 @@ export class HomepageComponent implements OnInit {
   Products=[];
   ngOnInit(): void {
     this.Products=this.HomeService.GetProducts();
+   
+    
+
     
   }
 

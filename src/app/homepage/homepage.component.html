@@ -66,7 +66,7 @@
               <!-- /col -->
               <div *ngFor="let Product of Products" class="col-6 col-md-4 col-xl-3">
                 <div class="grid_item">
-                  <span class="ribbon hot">{{Product.category}}</span>
+                  <span class="ribbon hot" translate="category.fruits"></span>
                   <figure>
                     <a [routerLink]="['/product']">
                       <img class="img-fluid lazy" [src]="Product.image"  alt="">
@@ -74,7 +74,7 @@
                     </a>
                   </figure>
                   <a [routerLink]="['/product']">
-                    <h3>{{Product.name}}</h3>
+                    <h3 translate="category.orange"></h3>
                   </a>
                   <div class="price_box">
                     <span class="new_price">${{Product.price}}</span>
@@ -105,7 +105,7 @@
               <!-- /col -->
               <div *ngFor="let Product of Products" class="col-6 col-md-4 col-xl-3">
                 <div class="grid_item">
-                  <span class="ribbon hot">{{Product.category}}</span>
+                  <span class="ribbon hot" translate="category.fruits"></span>
                   <figure>
                     <a [routerLink]="['/product']">
                       <img class="img-fluid lazy" [src]="Product.image" alt="">
@@ -113,7 +113,7 @@
                     </a>
                   </figure>
                   <a [routerLink]="['/product']">
-                    <h3>{{Product.name}}</h3>
+                    <h3 translate="category.orange"></h3>
                   </a>
                   <div class="price_box">
                     <span class="new_price">${{Product.price}}</span>
@@ -145,7 +145,7 @@
               <!-- /col -->
               <div *ngFor="let Product of Products" class="col-6 col-md-4 col-xl-3">
                 <div class="grid_item">
-                  <span class="ribbon hot">{{Product.category}}</span>
+                  <span class="ribbon hot" translate="category.fruits"></span>
                   <figure>
                     <a [routerLink]="['/product']">
                       <img class="img-fluid lazy" [src]="Product.image" alt="">
@@ -153,7 +153,7 @@
                     </a>
                   </figure>
                   <a [routerLink]="['/product']">
-                    <h3>{{Product.name}}</h3>
+                    <h3 translate="category.orange"></h3>
                   </a>
                   <div class="price_box">
                     <span class="new_price">${{Product.price}}</span>
