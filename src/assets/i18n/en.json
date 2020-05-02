@@ -105,6 +105,10 @@
         "product":"Product",
         "price":"Price",
         "quantity":"Quantity",
-        "subtotal":"Subtotal"
+        "subtotal":"Subtotal",
+        "total":"Total",
+        "shiping":"Shiping",
+        "update":"Update Cart",
+        "proceed":"Proceed to Checkout"
     }
 }
