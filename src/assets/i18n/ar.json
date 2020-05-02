@@ -73,6 +73,8 @@
         "address":"عنوان",
         "city":"مدينة",
         "required":"الحقول المطلوبة",
+        "signin_register":"تسجيل الدخول أو إنشاء حساب",
+
 
         "password_change":"تغيير كلمة السر",
         "new_password":"كلمة السر الجديدة",

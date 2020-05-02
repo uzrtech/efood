@@ -74,6 +74,7 @@
         "address":"Address",
         "city":"City",
         "required":"Required Fields",
+        "signin_register":"Sign In or Create an Account",
 
         "password_change":"Password Change",
         "new_password":"New Password",
