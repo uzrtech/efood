@@ -1,8 +1,9 @@
 {
     "home":
     {
+        "enter": "{{label}} را وارد کنید",
         "home":"Home",
-        "about":"Home",
+        "about":"Abount",
         "faq":"FAQ",
         "help":"Help",
         "account":"Account",
@@ -40,6 +41,7 @@
         "furniture":"Furniture",
         "glasses":"Glasses",
         "shoes":"Shoes",
+        "category":"Category",
         "watches":"Watches",
 
 
@@ -109,6 +111,8 @@
         "total":"Total",
         "shiping":"Shiping",
         "update":"Update Cart",
-        "proceed":"Proceed to Checkout"
+        "proceed":"Proceed to Checkout",
+        "add_to_cart":"Add to Cart",
+        "dummy_text":"Lorem ipsum dolor sit amet, his no adipisci pericula conclusionemque. Qui labore salutandi ex, vivendum argumentum mediocritatem vis eu, viris tritani per id. At iudicabit maluisset vis, dicant diceret pri cu. Cum at rebum vulputate forensibus, eruditi principes ad vel, pro denique recusabo at. Ubique nominavi delicata sit cu, quo no reque insolens suscipiantur."
     }
 }
