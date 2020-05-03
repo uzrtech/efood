@@ -1,7 +1,7 @@
  
     <header>
       <div class="main_header">
-          <div class="header_top">
+          <!-- <div class="header_top">
               <div class="container">
                   <div class="row align-items-center">
                       <div class="col-lg-6 col-md-6">
@@ -36,9 +36,9 @@
                       </div>
                   </div>
               </div>
-          </div>
+          </div> -->
           <div class="header_middle">
-              <div class="container">
+              <div class="p-2">
                   <div class="row align-items-center" [ngClass]="{'rtl': is_rtl}">
                       <div class="col-lg-2 col-md-3 col-sm-3 col-3">
                           <div class="logo">
@@ -172,6 +172,20 @@
                                   <div class="header_account_list header_wishlist">
                                     <a routerLink="/myaccount"><span class="lnr lnr-user"></span></a>
                                 </div>
+
+                                <div class="header_account_list header_wishlist">
+                                    <div class="language_currency">
+                                        <ul>
+                                            <li class="language"><a translate="home.language"><i class="icon-right ion-ios-arrow-down"></i></a>
+                                                <ul class="dropdown_language">
+                                                    <li><button class="btn btn-sm btn-link" (click)="changeLangage('en')">English</button></li>
+                                                    <li><button class="btn btn-sm btn-link" (click)="changeLangage('ar')" href="#">العربية</button></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
                               </div>
                           </div>
                       </div>
@@ -179,9 +193,9 @@
               </div>
           </div>
           <div class="header_bottom sticky-header">
-              <div class="container">
+              <div class="p-2">
                   <div class="row align-items-center" [ngClass]="{'rtl': is_rtl}">
-                      <div class="col-lg-3">
+                      <div class="col-lg-2">
                           <div class="categories_menu">
                               <div class="categories_title">
                                <h6 style="display: inline; color: white; font-weight: bold;"> <span class="lnr lnr-menu"></span></h6>

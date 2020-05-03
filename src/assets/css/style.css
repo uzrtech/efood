@@ -45,6 +45,18 @@ Author URI: http://themeforest.net/user/Ansonika/
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Janna LT';
+  src: url('fonts/JannaLT-Regular.eot');
+  src: url('fonts/JannaLT-Regular.eot?#iefix') format('embedded-opentype'),
+      url('fonts/JannaLT-Regular.woff2') format('woff2'),
+      url('fonts/JannaLT-Regular.woff') format('woff'),
+      url('fonts/JannaLT-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 :root {
   --site-primary-color:#21B9E8;
   --main-header-bg-color: var(--site-primary-color);
@@ -1745,7 +1757,7 @@ body {
   background: #f8f8f8;
   font-size: 14px;
   font-size: 0.875rem;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-family: "Janna LT", Arial, Helvetica, sans-serif;
   color: #444;
 }
 
@@ -1756,6 +1768,7 @@ h4,
 h5,
 h6 {
   color: #111;
+  font-family: "Janna LT";
 }
 
 p {

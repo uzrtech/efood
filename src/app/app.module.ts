@@ -45,7 +45,7 @@ export function HttpLoaderFactory(http : HttpClient){
     NgbModule,
     HttpClientModule,
     TranslateModule.forRoot({
-      defaultLanguage: 'en',
+      defaultLanguage: 'ar',
       loader: {
         provide: TranslateLoader,
         useFactory: HttpLoaderFactory ,

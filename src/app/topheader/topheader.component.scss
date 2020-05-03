@@ -511,7 +511,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
 }
 
 .header_middle {
-    padding: 30px 0 24px;
+    padding: 10px 0 24px;
     @media #{$tablet-device} {
         margin-bottom: 29px;
         padding: 0;
@@ -826,6 +826,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
 
 .header_account_area {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
     @media #{$large-mobile} {}
 }
@@ -833,7 +834,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
 .header_right_info {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    //justify-content: flex-end;
     @media #{$tablet-device} {
         justify-content: center;
     }
@@ -1753,7 +1754,9 @@ $small-mobile: 'only screen and (max-width: 479px)';
         &.register {
             & ul {
                 & li {
+                    margin-top: 15px;
                     & a {
+                        margin-top: 15px;
                         color: #fff;
                         &:hover {
                             color: $fonts_color;
@@ -1920,8 +1923,10 @@ $small-mobile: 'only screen and (max-width: 479px)';
         }
     }
     & .header_account_list {
+        margin-top: 15px;
         &.register {
-            ul {
+            margin-top: 15px;
+            & ul {
                 & li {
                     & a {
                         &:hover {
@@ -2089,6 +2094,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
         &.register {
             ul {
                 & li {
+                    margin-top: 15px;
                     & a {
                         &:hover {
                             color: $secondary_color4;
