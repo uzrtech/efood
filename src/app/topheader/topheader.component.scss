@@ -3,7 +3,9 @@
     direction: ltr;
 }
 
-
+.language{
+    margin-top: 10px;
+}
 
 
 
@@ -524,7 +526,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
 
 .logo {
     & img {
-        max-width: 100px;
+        max-width: 100%;
         @media #{$large-mobile} {
             max-width: 120px;
         }
@@ -776,6 +778,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
         }
     }
     &.register {
+        margin-top: 15px;
         @media #{$small-mobile2} {
             display: none;
         }
@@ -1026,6 +1029,8 @@ $small-mobile: 'only screen and (max-width: 479px)';
     }
     & nav {
         &>ul {
+            padding: 0px;
+            margin-bottom: 0px;
             display: flex;
             &>li {
                 list-style: none;
@@ -1754,9 +1759,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
         &.register {
             & ul {
                 & li {
-                    margin-top: 15px;
                     & a {
-                        margin-top: 15px;
                         color: #fff;
                         &:hover {
                             color: $fonts_color;
@@ -1923,9 +1926,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
         }
     }
     & .header_account_list {
-        margin-top: 15px;
         &.register {
-            margin-top: 15px;
             & ul {
                 & li {
                     & a {
@@ -2094,7 +2095,6 @@ $small-mobile: 'only screen and (max-width: 479px)';
         &.register {
             ul {
                 & li {
-                    margin-top: 15px;
                     & a {
                         &:hover {
                             color: $secondary_color4;
