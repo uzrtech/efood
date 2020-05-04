@@ -29,9 +29,10 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     flex-direction: column;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    margin-top: 32px;
+    margin-top: 2px;
     width: 100%;
 }
+.css-wt0fwe{height: 25px;}
 .css-hg3rl0 {
     height: 154px;
     padding: 0px 2px;
