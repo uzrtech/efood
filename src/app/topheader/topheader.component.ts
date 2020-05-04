@@ -1,3 +1,4 @@
+import { HomeService } from './../home.service';
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 import { TranslateService } from "@ngx-translate/core";
@@ -8,10 +9,13 @@ import { TranslateService } from "@ngx-translate/core";
 })
 export class TopheaderComponent implements OnInit {
 
-public is_rtl: Boolean = false;
-constructor(private translateService: TranslateService) { this.translateService.setDefaultLang('en');}
+public is_rtl: Boolean = true;
+constructor(private HomeService: HomeService) { }
 
 ngOnInit(): void {
+  this.HomeService.rtl_Subscription().subscribe(value=>{
+    this.is_rtl=value;
+  })
   $("#carousel-home .owl-carousel .owl-item.active .owl-slide-animated").addClass("is-transitioned");
   $("section").show();
   // $("#carousel-home .owl-carousel").on("initialized.owl.carousel", function() {
@@ -27,9 +31,8 @@ ngOnInit(): void {
  
   }
   changeLangage(lang: string) {
-    this.translateService.setDefaultLang(lang);
-    this.translateService.use(lang);
-    this.is_rtl = this.translateService.currentLang=="ar"? true : false;
+    this.HomeService.Change_Language(lang);
+    
     
   }
 
