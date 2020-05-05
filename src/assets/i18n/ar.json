@@ -29,7 +29,9 @@
         "top_trending":"الأكثر رواجًا",
         "top_trending_items":"العناصر الأكثر رواجًا",
         "feature_products":"المنتجات المميزة",
-        "feature_items":"عناصر الميزة"
+        "feature_items":"عناصر الميزة",
+        "popular_categories":"الفئات الشعبية"
+
     },
     "category":{
         "categories":"التصنيفات",

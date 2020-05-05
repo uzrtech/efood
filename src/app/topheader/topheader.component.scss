@@ -1599,6 +1599,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
 
 .call-support {
     text-align: right;
+    direction: ltr;
     @media #{$tablet-device} {
         display: none;
         text-align: center;
