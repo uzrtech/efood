@@ -10,7 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
 export class HomepageComponent implements OnInit {
 
   constructor(private HomeService:HomeService) { }
-  is_rtl: Boolean = true;
+  is_rtl: Boolean = false;
   Products=[];
   ngOnInit(): void {
     this.Products=this.HomeService.GetProducts();

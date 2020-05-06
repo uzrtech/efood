@@ -6,6 +6,8 @@ line-height: 1.3;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
+
+
 .product-list{
     margin:20px
 }
@@ -37,7 +39,7 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 154px;
     padding: 0px 2px;
 }.css-1pnv3q4 {
-    margin: 5px 0px 3px;
+    /* margin: 5px 0px 3px; */
     padding: 0px 5px;
 }.css-1pnv3q4 {
     font-size: 1.1em;
@@ -48,21 +50,22 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 5px 0px;
     padding: 0px 5px;
 }.css-sjzzz0 {
-    color: rgb(77, 77, 77);
-    font-weight: bold;
+    color: grey;
+    font-size: 0.9em;
+    /* font-weight: bold;
     height: 12px;
-    margin-bottom: 8px;
-    padding: 0px 8px;
+    margin-bottom: 8px; */
+    padding: 0px 5px;
 }.css-3ht5in {
-    margin: 0px 0px 14px;
-    padding: 0px 8px;
+    /* margin: 0px 0px 14px; */
+    padding: 0px 5px;
 }.css-abm2xy {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     -webkit-box-pack: center;
     justify-content: center;
     height: 40px;
-    border-top: 1px solid rgb(230, 230, 230);
+    border-top: 1px solid rgb(230, 230, 230); */
     padding: 8px;
 }.css-1peg6kw {
     display: flex;
@@ -109,12 +112,12 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 0px 6px 0px 0px;
     padding: 5px 0px;
 }.css-du7cmn {
-    background-color: rgb(221, 35, 38);
+    background-color: #21B9E8;
     color: rgb(250, 250, 250);
     float: right;
     text-transform: uppercase;
     font-family: Roboto, sans-serif;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px;
     transition-property: box-shadow, background-color;
     transition-duration: 300ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -122,12 +125,19 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     align-items: center;
     font-size: 0.875em;
     font-weight: 600;
-    border-radius: 2px;
+    border-radius: 20px;
     border-width: 1px;
     border-style: solid;
     border-color: transparent;
     border-image: initial;
-    padding: 4px 16px;
+    padding: 5px 12px;
+}.css-du7cmm{
+    margin: 3px;
+    display: inline-block;
+    line-height: 1em;
+    color: black;
+    font-weight: bold;
+    font-size: 0.7em;
 }.css-3ibtn7 {
     font-size: 0.875em;
     direction: initial;
@@ -135,4 +145,13 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: rgb(77, 77, 77);
     position: relative;
     top: 0px;
+}
+.css-1xhl7rj{
+    color: red;
+    font-weight: bold;
+}
+.css-1xhl7rj span{
+    color: black;
+    font-weight: 500;
+    margin-left: 2px;
 }

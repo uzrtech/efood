@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WishlistComponent implements OnInit {
 
+   is_rtl : boolean = true;
 
   constructor(private HomeService:HomeService) { }
 
