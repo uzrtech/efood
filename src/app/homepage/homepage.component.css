@@ -148,10 +148,19 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .css-1xhl7rj{
     color: red;
+    font-size: 1.1em;
     font-weight: bold;
 }
+
 .css-1xhl7rj span{
     color: black;
-    font-weight: 500;
+    font-weight: 600;
     margin-left: 2px;
+}
+
+.css-1xhl7rjd{
+    color: grey;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-decoration: line-through;
 }
