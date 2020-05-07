@@ -15,7 +15,7 @@ export class HomeService {
     //{name:"Tomato",price:'80',category:"Grocery",image:'assets/img/products/tomatoes.jpg'}
 ];
   constructor(private translateService: TranslateService) {
-    this.translateService.setDefaultLang('en');
+    this.translateService.setDefaultLang('ar');
    }
   rtl_Subscription(){return this.rtl_subject.asObservable();}
   Change_Language(lang: string){
