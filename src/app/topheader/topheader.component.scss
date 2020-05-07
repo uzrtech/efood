@@ -1172,6 +1172,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
 
 .categories_menu {
     position: relative;
+    width: 160px;
 }
 
 .categories_title {
@@ -1180,7 +1181,8 @@ $small-mobile: 'only screen and (max-width: 479px)';
     height: 51px;
     background: $secondary_color;
     border-radius: 10px 10px 0 0;
-    padding-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     @media #{$tablet-device} {
         height: 45px;
         border-radius: 6px;
@@ -1198,7 +1200,8 @@ $small-mobile: 'only screen and (max-width: 479px)';
         display: block;
         line-height: 51px;
         text-transform: capitalize;
-        padding-left: 35px;
+        padding-left: 10px;
+        padding-right: 10px;
         position: relative;
         color: #fff;
         // &::before {
@@ -1269,7 +1272,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
                 font-weight: 400;
                 display: block;
                 cursor: pointer;
-                padding: 0 20px 0 30px;
+                // padding: 0 20px 0 30px;
                 @media #{$desktop-device} {
                     line-height: 38px;
                 }
