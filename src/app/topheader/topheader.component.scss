@@ -8,7 +8,14 @@
 }
 
 
-
+.sticky-header{
+        //position: fixed;
+        top: 0;
+        width: 100%;
+}
+.sticky + .content {
+    padding-top: 160px;
+}
 /* 01. header css here */
 
 // Font Family
@@ -526,7 +533,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
 
 .logo {
     & img {
-        max-width: 100%;
+        max-width: 80%;
         @media #{$large-mobile} {
             max-width: 120px;
         }
