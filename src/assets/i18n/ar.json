@@ -30,7 +30,12 @@
         "top_trending_items":"العناصر الأكثر رواجًا",
         "feature_products":"المنتجات المميزة",
         "feature_items":"عناصر الميزة",
-        "popular_categories":"الفئات الشعبية"
+        "popular_categories":"الفئات الشعبية",
+
+
+        "icecream":"بوظة",
+        "fast_food":"مخبز",
+        "dry_fruits":"فواكه مجففة"
 
     },
     "category":{

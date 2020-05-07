@@ -15,6 +15,13 @@ export class HomepageComponent implements OnInit {
   ngOnInit(): void {
     this.Products=this.HomeService.GetProducts();
     this.HomeService.rtl_Subscription().subscribe(value=>{this.is_rtl=value});
+
+
+    $(document).ready(function(){
+      $(".wish-icon i").click(function(){
+        $(this).toggleClass("fa-heart fa-heart-o");
+      });
+    });	
   }
 
 }

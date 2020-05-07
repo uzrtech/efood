@@ -31,8 +31,11 @@
         "top_trending_items":"Top Trending Items",
         "feature_products":"Feature Products",
         "feature_items":"Feature Items",
-        "popular_categories":"Popular Categories"
+        "popular_categories":"Popular Categories",
 
+        "icecream":"Ice Cream",
+        "fast_food":"Backery",
+        "dry_fruits":"Dry Fruits"
 
     },
     "category":{
