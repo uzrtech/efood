@@ -1774,10 +1774,14 @@ h6 {
 
 p {
   margin-bottom: 20px;
+  font-family: "Janna LT";
+
 }
 
 strong {
   font-weight: 500;
+  font-family: "Janna LT";
+
 }
 
 label {

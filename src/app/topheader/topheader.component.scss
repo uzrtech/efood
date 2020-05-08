@@ -19,9 +19,9 @@
 /* 01. header css here */
 
 // Font Family
-$worksans: 'Work Sans',
+$worksans: 'Janna LT',
 sans-serif;
-$Playfair: 'Playfair Display',
+$Playfair: 'Janna LT',
 serif;
 * {
     box-sizing: border-box;
@@ -794,6 +794,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
                 display: inline-block;
                 & a {
                     text-transform: uppercase;
+                    font-family: "Janna LT";
                     color: black;
                     &:hover {
                         color: $secondary_color;

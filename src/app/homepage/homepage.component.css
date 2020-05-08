@@ -30,7 +30,7 @@
   .carousel .item {
     color: #747d89;
     min-height: 325px;
-      text-align: center;
+      /* text-align: center; */
     overflow: hidden;
   }
   .carousel .thumb-wrapper {
@@ -188,7 +188,7 @@ line-height: 1.3;
     justify-content: center;
     text-transform: uppercase;
     z-index: 2;
-    background-color: rgb(255, 223, 40);
+    background-color: #f4ff50;
     color: rgb(238, 37, 39);
     font-size: 0.875em;
     width: 100%;
@@ -331,4 +331,8 @@ line-height: 1.3;
     font-size: 0.9em;
     font-weight: bold;
     text-decoration: line-through;
+}
+
+.c4-product-card{
+  border: 2px solid #f4ff50;
 }
