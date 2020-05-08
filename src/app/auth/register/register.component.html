@@ -4,10 +4,10 @@
             <h3 class="new_client" translate="auth.register"></h3> <small class="float-right pt-2" translate="auth.required"></small>
             <div class="form_container">
                 <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email_2" placeholder="Email*">
+                    <input type="email" class="form-control" name="email" id="email_2" [placeholder]="'auth.email' | translate">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" name="password_in_2" id="password_in_2" value="" placeholder="Password*">
+                    <input type="password" class="form-control" name="password_in_2" id="password_in_2" value="" [placeholder]="'auht.password' | translate">
                 </div>
                 <hr>
                 <!-- <div class="form-group">
@@ -24,12 +24,12 @@
                     <div class="row no-gutters">
                         <div class="col-6 pr-1">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Name*">
+                                <input type="text" class="form-control" [placeholder]="'auth.name' | translate">
                             </div>
                         </div>
                         <div class="col-6 pr-1">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="City*">
+                                <input type="text" class="form-control" [placeholder]="'auth.city'| translate">
                             </div>
                         </div>
                         <!-- <div class="col-6 pl-1">
@@ -39,7 +39,7 @@
                         </div> -->
                         <div class="col-12">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Full Address*">
+                                <input type="text" class="form-control" [placeholder]="'auth.address' | translate">
                             </div>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                     <!-- /row -->
                     
                     <div class="row no-gutters">
-                        <div class="col-6 pr-1">
+                        <!-- <div class="col-6 pr-1">
                             <div class="form-group">
                                 <div class="custom-select-form">
                                     <select class="wide add_bottom_10" name="country" id="country">
@@ -66,7 +66,7 @@
                                     </select>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-6 pl-1">
                             <div class="form-group">
                                 <input type="text" class="form-control" placeholder="Telephone *">
@@ -128,14 +128,14 @@
                 </div>
                 <!-- /company -->
                 <hr>
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label class="container_check">Accept <a href="#0">Terms and conditions</a>
                         <input type="checkbox">
                         <span class="checkmark"></span>
                     </label>
-                </div>
-                <div class="text-center"><input [routerLink]="[ '/' ]" type="submit" value="Register" class="btn_1 full-width"></div>
-                <div class="text-center"><a [routerLink]="[ '/auth' ]" class="btn btn-primary btn-block" translate="auth.login">Login</a></div>
+                </div> -->
+                <div class="text-center"><input [routerLink]="[ '/' ]" type="submit" [value]="'auth.register' | translate" class="btn_1 full-width"></div>
+                <div class="text-center"><a [routerLink]="[ '/auth' ]" class="btn btn-primary btn-block" translate="auth.login"></a></div>
             </div>
             <!-- /form_container -->
         </div>

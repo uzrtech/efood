@@ -1,7 +1,6 @@
 
     <div class="col-xl-12 col-lg-12 col-md-12">
         <div class="box_account">
-            <h3 class="client" translate="auth.login"></h3>
             <div class="form_container">
                 <div class="row no-gutters">
                     <div class="col-lg-6 pr-lg-1">
@@ -13,22 +12,22 @@
                 </div>
                 <div class="divider"><span>Or</span></div>
                 <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Email*">
+                    <input type="email" class="form-control" name="email" id="email" [placeholder]="'auth.email' | translate">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" name="password_in" id="password_in" value="" placeholder="Password*">
+                    <input type="password" class="form-control" name="password_in" id="password_in" value="" [placeholder]="'auth.password' | translate">
                 </div>
                 <div class="clearfix add_bottom_15">
                     <div class="checkboxes float-left">
-                        <label class="container_check" translate="auth.remeber">
+                        <label class="container_check" translate="auth.remember">
                             <input type="checkbox">
                             <span class="checkmark"></span>
                         </label>
                     </div>
                     <div class="float-right"><a id="forgot" href="javascript:void(0);" translate="auth.forgot"></a></div>
                 </div>
-                <div class="text-center"><input [routerLink]="[ '/' ]" type="submit" value="Log In" class="btn_1 full-width"></div>
-                <div class="text-center"><a [routerLink]="[ '/auth/register' ]" type="button" hre class="btn btn-primary btn-block btn_2 full-width" translate="auth.register">Register</a></div>
+                <div class="text-center"><input [routerLink]="[ '/' ]" type="submit" [value]="'auth.login' | translate" class="btn_1 full-width"></div>
+                <div class="text-center"><a [routerLink]="[ '/auth/register' ]" type="button" hre class="btn btn-primary btn-block btn_2 full-width" translate="auth.register"></a></div>
                 <div id="forgot_pw">
                     <div class="form-group">
                         <input type="email" class="form-control" name="email_forgot" id="email_forgot" placeholder="Type your email">
@@ -43,9 +42,9 @@
         <div class="row">
             <div class="col-md-6 d-none d-lg-block">
                 <ul class="list_ok">
-                    <li translate="auth.find_locations">Find Locations</li>
-                    <li translate="auth.secure_payments">Secure Payments</li>
-                    <li translate="auth.data_protection">Data Protection</li>
+                    <li translate="auth.find_locations"></li>
+                    <li translate="auth.secure_payments"></li>
+                    <li translate="auth.data_protection"></li>
                 </ul>
             </div>
             <!-- <div class="col-md-6 d-none d-lg-block">

@@ -89,7 +89,7 @@
         "save":"Save",
 
         "find_locations":"Find Locations ",
-        "secure-payments":"Secure Payments", 
+        "secure_payments":"Secure Payments", 
         "data_protection":"Data Protection" 
     },
     "wishlist":{
@@ -121,6 +121,7 @@
         "proceed":"Proceed to Checkout",
         "add_to_cart":"Add to Cart",
         "add_to":"Add to",
+        "apply":"Apply",
         "favourite":"Favourite",
         "dummy_text":"Lorem ipsum dolor sit amet, his no adipisci pericula conclusionemque. Qui labore salutandi ex, vivendum argumentum mediocritatem vis eu, viris tritani per id. At iudicabit maluisset vis, dicant diceret pri cu. Cum at rebum vulputate forensibus, eruditi principes ad vel, pro denique recusabo at. Ubique nominavi delicata sit cu, quo no reque insolens suscipiantur."
     },

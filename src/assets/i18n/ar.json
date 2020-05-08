@@ -92,7 +92,7 @@
         "save":"حفظ",
 
         "find_locations":"البحث عن مواقع ",
-        "secure-payments":"المدفوعات الآمنة", 
+        "secure_payments":"المدفوعات الآمنة", 
         "data_protection":"حماية البيانات" 
     },
     "wishlist":{
