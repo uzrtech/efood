@@ -520,7 +520,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
 }
 
 .header_middle {
-    padding: 10px 0 24px;
+    padding: 5px;
     @media #{$tablet-device} {
         margin-bottom: 29px;
         padding: 0;

@@ -88,13 +88,13 @@
   .carousel .carousel-control {
     height: 44px;
     width: 40px;
-    background: #21B9E8;	
+    color: #21B9E8;	
       margin: auto 0;
       border-radius: 4px;
     opacity: 0.8;
   }
   .carousel .carousel-control:hover {
-    background: #21B9E8;
+    color: #21B9E8;
     opacity: 1;
   }
   .carousel .carousel-control i {
@@ -106,7 +106,7 @@
       z-index: 5;
       left: 0;
       right: 0;
-      color: #fff;
+      color: #21B9E8;
     text-shadow: none;
       font-weight: bold;
   }
