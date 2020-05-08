@@ -1,3 +1,4 @@
+import { SearchComponent } from './search/search.component';
 import { WishlistComponent } from './myaccount/wishlist/wishlist.component';
 import { ProductComponent } from './product/product.component';
 import { ProductsComponent } from './products/products.component';
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path:'wishlist', component: WishlistComponent},
   {path:'products', component: ProductsComponent},
   {path:'product', component: ProductComponent},
+  {path:'search', component: SearchComponent},
   {path:'checkout', component: CheckoutComponent},
   { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },
   { path: 'admin', loadChildren: () => import('./admin-panel/admin-panel.module').then(m => m.AdminPanelModule) }
