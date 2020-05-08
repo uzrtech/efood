@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartComponent implements OnInit {
 
-  is_rtl: Boolean = false;
+  is_rtl: Boolean = true;
   constructor(private HomeService:HomeService) { }
 
   Products=[];
