@@ -6,7 +6,9 @@
 .language{
     margin-top: 10px;
 }
-
+.categori_toggle{
+    font-family: "Janna LT";
+}
 
 .sticky-header{
         //position: fixed;
@@ -588,6 +590,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
         padding-left: 25px;
         padding-right: 35px;
         font-size: 13px;
+        font-family: "Janna LT";
         height: 45px;
         line-height: 45px;
         border-radius: 25px 0 0 25px;
@@ -632,7 +635,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
 }
 
 .search_container {
-    margin-right: 35px;
+    // margin-right: 35px;
     @media #{$desktop-device} {
         margin-right: 35px;
     }
@@ -1044,7 +1047,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
                 list-style: none;
                 position: relative;
                 margin-right: 37px;
-                &:last-child {
+                &:first-child {
                     margin-right: 0;
                 }
                 @media #{$desktop-device} {
@@ -1071,8 +1074,9 @@ $small-mobile: 'only screen and (max-width: 479px)';
                 }
                 &>a {
                     display: block;
+                    font-family: "Janna LT";
                     font-size: 15px;
-                    line-height: 50px;
+                    line-height: 20px;
                     text-transform: capitalize;
                     font-weight: 500;
                     position: relative;
@@ -1180,13 +1184,13 @@ $small-mobile: 'only screen and (max-width: 479px)';
 
 .categories_menu {
     position: relative;
-    width: 160px;
+    width: 130px;
 }
 
 .categories_title {
     position: relative;
     cursor: pointer;
-    height: 51px;
+    height: 30px;
     background: $secondary_color;
     border-radius: 10px 10px 0 0;
     padding-left: 10px;
@@ -1202,11 +1206,10 @@ $small-mobile: 'only screen and (max-width: 479px)';
     & h2 {
         font-size: 16px;
         font-weight: 500;
-        line-height: 26px;
+        line-height:30px;
         cursor: pointer;
         margin-bottom: 0;
         display: block;
-        line-height: 51px;
         text-transform: capitalize;
         padding-left: 10px;
         padding-right: 10px;
@@ -1623,18 +1626,19 @@ $small-mobile: 'only screen and (max-width: 479px)';
     }
     & p {
         font-size: 13px;
-        line-height: 18px;
+        margin: 0px;
+        line-height: 13px;
         display: inline-block;
         position: relative;
-        &::before {
-            content: '';
-            position: absolute;
-            background: url('/assets/img/icon/phone.png') no-repeat 0 0;
-            width: 32px;
-            height: 32px;
-            display: inline-block;
-            left: -41px;
-        }
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     background: url('/assets/img/icon/phone.png') no-repeat 0 0;
+        //     width: 32px;
+        //     height: 32px;
+        //     display: inline-block;
+        //     left: -41px;
+        // }
         & a {
             display: block;
             font-size: 15px;

@@ -25,7 +25,7 @@
   }
   .carousel {
     margin: 50px auto;
-    padding: 0 70px;
+    padding: 0 30px;
   }
   .carousel .item {
     color: #747d89;
@@ -85,28 +85,32 @@
       font-weight: bold;
       margin-left: 5px;
   }
+  .carousel-control-prev{
+    margin-left: 50px;
+  }
   .carousel .carousel-control {
-    height: 44px;
-    width: 40px;
-    color: #21B9E8;	
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    color: lightgray;	
+    border: solid 1px lightgray;
       margin: auto 0;
-      border-radius: 4px;
-    opacity: 0.8;
+      border-radius: 50px;
+    opacity: 0.9;
   }
   .carousel .carousel-control:hover {
     color: #21B9E8;
     opacity: 1;
   }
   .carousel .carousel-control i {
-      font-size: 36px;
+      font-size: 30px;
       position: absolute;
-      top: 50%;
+      /* top: 50%; */
       display: inline-block;
-      margin: -19px 0 0 0;
+      /* margin: -19px 0 0 0; */
       z-index: 5;
       left: 0;
       right: 0;
-      color: #21B9E8;
     text-shadow: none;
       font-weight: bold;
   }
@@ -117,6 +121,12 @@
   .carousel .item-price b {
     opacity: 0.7;
     margin-right: 5px;
+  }
+  .carousel .carousel-control.left {
+    margin-left: 70px;
+  }
+  .carousel .carousel-control.right {
+    margin-right: 45px;
   }
   .carousel .carousel-control.left i {
     margin-left: -2px;
@@ -166,6 +176,7 @@
     color: #4d4d4d;
 font-family: Roboto,sans-serif;
 font-weight: 400;
+width: 190px;
 line-height: 1.3;
  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /*, 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 
@@ -305,7 +316,7 @@ line-height: 1.3;
     line-height: 1em;
     color: black;
     font-weight: bold;
-    font-size: 0.7em;
+    font-size: 0.6em;
 }.css-3ibtn7 {
     font-size: 0.875em;
     direction: initial;

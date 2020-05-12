@@ -5072,9 +5072,10 @@ input.qty2:focus {
 }
 
 .opacity-mask {
-  width: 100%;
+  width: 80%;
   height: 100%;
   position: absolute;
+  margin-left: 100px;
   left: 0;
   top: 0;
   z-index: 2;
