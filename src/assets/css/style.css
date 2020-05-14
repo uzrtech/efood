@@ -76,6 +76,55 @@ Author URI: http://themeforest.net/user/Ansonika/
   direction: rtl;
   text-align: right;
 }
+
+
+
+
+
+
+
+.maf-container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 12px;
+	padding-left: 12px
+}
+
+@media (min-width:720px) {
+	.maf-container {
+		width: 712px
+	}
+}
+
+@media (min-width:992px) {
+	.maf-container {
+		width: 984px
+	}
+}
+
+@media (min-width:1280px) {
+	.maf-container {
+		width: 1258px
+	}
+}
+
+.maf-container-fluid {
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 12px;
+	padding-left: 12px
+}
+
+
+.comp-maincatnav__wrapper .maf-container {
+	position: relative;
+	width: 100%;
+	padding: 0
+}
+
+
+
+
 .header-icon_like_custom:before {
   content: '\0041';
 }

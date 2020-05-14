@@ -6,15 +6,12 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
   templateUrl: './wishlist.component.html',
   styleUrls: ['./wishlist.component.css']
 })
-export class WishlistComponent implements OnInit,OnDestroy {
+export class WishlistComponent implements OnInit {
 
    is_rtl : Boolean = true;
 
   constructor(private HomeService:HomeService) { }
-  ngOnDestroy(): void {
-    throw new Error("Method not implemented.");
-  }
-
+ 
   Products=[];
   ngOnInit(): void {
     this.Products=this.HomeService.GetProducts();

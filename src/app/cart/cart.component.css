@@ -4,8 +4,12 @@
 .cart-list{
     font-family: "Janna LT";
 }
-
-
+.table-rtl {
+  float: right;
+}
+thead , td , tr {
+  float: inherit;
+}
 .main_title{
     margin-bottom: 0px;
   }
