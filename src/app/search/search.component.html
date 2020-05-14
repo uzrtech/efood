@@ -24,11 +24,10 @@
 					<li>
 						<div class="sort_select">
 							<select name="sort" id="sort">
-                                    <option value="popularity" selected="selected">Sort by popularity</option>
-                                    <option value="rating">Sort by average rating</option>
-                                    <option value="date">Sort by newness</option>
-                                    <option value="price">Sort by price: low to high</option>
-                                    <option value="price-desc">Sort by price: high to 
+                                    <option value="rating">Sort by Name Ascending</option>
+                                    <option value="date">Sort by Name Descending</option>
+                                    <option value="price">Sort by price: Low to High</option>
+                                    <option value="price-desc">Sort by price: High to Low
 							</select>
 						</div>
 					</li>
@@ -46,14 +45,14 @@
 			</div>
 			<!-- /toolbox -->
 			
-			<div class="container margin_30">
+			<div class="maf-container margin_30">
 			
-			<div class="row">
+			<div class="row" [ngClass]="{'rtl': is_rtl}">
 				<aside class="col-lg-3" id="sidebar_fixed">
-				    <div class="filter_col">
+				    <div class="filter_col"> 
 				        <div class="inner_bt"><a href="#" class="open_filters"><i class="ti-close"></i></a></div>
 				        <div class="filter_type version_2">
-				            <h4><a href="#filter_1" data-toggle="collapse" class="opened">Categories</a></h4>
+				            <h4><a href="#filter_1" data-toggle="collapse" class="closed">Categories</a></h4>
 				            <div class="collapse show" id="filter_1">
 				                <ul>
 				                    <li>
@@ -91,38 +90,64 @@
                             
 				            <!-- /filter_type -->
 				        </div>
-				        <!-- /filter_type -->
-				        <!-- <div class="filter_type version_2">
-				            <h4><a href="#filter_2" data-toggle="collapse" class="opened">Color</a></h4>
-				            <div class="collapse show" id="filter_2">
+						<!-- /filter_type -->
+						<div class="filter_type version_2">
+				            <h4><a href="#filter_4" data-toggle="collapse" class="closed">Price</a></h4>
+				            <div class="collapse" id="filter_4">
 				                <ul>
 				                    <li>
-				                        <label class="container_check">Blue <small>06</small>
+				                        <label class="container_check">0 EGP — 50 EGP<small>11</small>
 				                            <input type="checkbox">
 				                            <span class="checkmark"></span>
 				                        </label>
 				                    </li>
 				                    <li>
-				                        <label class="container_check">Red <small>12</small>
+				                        <label class="container_check">50 EGP — 100 EGP<small>08</small>
 				                            <input type="checkbox">
 				                            <span class="checkmark"></span>
 				                        </label>
 				                    </li>
 				                    <li>
-				                        <label class="container_check">Orange <small>17</small>
+				                        <label class="container_check">100 EGP — 150 EGP<small>05</small>
 				                            <input type="checkbox">
 				                            <span class="checkmark"></span>
 				                        </label>
 				                    </li>
 				                    <li>
-				                        <label class="container_check">Black <small>43</small>
+				                        <label class="container_check">150 EGP — 200 EGP<small>18</small>
 				                            <input type="checkbox">
 				                            <span class="checkmark"></span>
 				                        </label>
 				                    </li>
 				                </ul>
 				            </div>
-				        </div> -->
+				        </div>
+				        <!-- /filter_type -->
+						<div class="filter_type version_2">
+						<h4><a href="#filter_2" data-toggle="collapse" class="closed">Brand</a></h4>
+				            <div class="collapse" id="filter_2">
+				                <ul>
+				                    <li>
+				                        <label class="container_check">Brand 1 <small>06</small>
+				                            <input type="checkbox">
+				                            <span class="checkmark"></span>
+				                        </label>
+				                    </li>
+				                    <li>
+				                        <label class="container_check">Brand 2 <small>12</small>
+				                            <input type="checkbox">
+				                            <span class="checkmark"></span>
+				                        </label>
+				                    </li>
+				                    <li>
+				                        <label class="container_check">Brand 3 <small>17</small>
+				                            <input type="checkbox">
+				                            <span class="checkmark"></span>
+				                        </label>
+				                    </li>
+				                </ul>
+				            </div>
+				        </div>
 				        <!-- /filter_type -->
 				        <!-- <div class="filter_type version_2">
 				            <h4><a href="#filter_3" data-toggle="collapse" class="closed">Brands</a></h4>
@@ -156,38 +181,7 @@
 				            </div>
 				        </div> -->
 				        <!-- /filter_type -->
-				        <div class="filter_type version_2">
-				            <h4><a href="#filter_4" data-toggle="collapse" class="closed">Price</a></h4>
-				            <div class="collapse" id="filter_4">
-				                <ul>
-				                    <li>
-				                        <label class="container_check">0 EGP — 50 EGP<small>11</small>
-				                            <input type="checkbox">
-				                            <span class="checkmark"></span>
-				                        </label>
-				                    </li>
-				                    <li>
-				                        <label class="container_check">50 EGP — 100 EGP<small>08</small>
-				                            <input type="checkbox">
-				                            <span class="checkmark"></span>
-				                        </label>
-				                    </li>
-				                    <li>
-				                        <label class="container_check">100 EGP — 150 EGP<small>05</small>
-				                            <input type="checkbox">
-				                            <span class="checkmark"></span>
-				                        </label>
-				                    </li>
-				                    <li>
-				                        <label class="container_check">150 EGP — 200 EGP<small>18</small>
-				                            <input type="checkbox">
-				                            <span class="checkmark"></span>
-				                        </label>
-				                    </li>
-				                </ul>
-				            </div>
-				        </div>
-				        <!-- /filter_type -->
+				        
 				        <div class="buttons">
 				            <a href="#0" class="btn_1">Filter</a> <a href="#0" class="btn_1 gray">Reset</a>
 				        </div>
@@ -195,108 +189,7 @@
 				</aside>
 				<!-- /col -->
 				<div class="col-lg-9">
-                    <div class="row">
-                                <div class="col-lg-3">
-                                  <div class="product-item" style="width: 205px;">
-                                    <div points="0"  data-testid="product-card" class="c4-product-card css-1ncs8kg">
-                                      <div class="css-wt0fwe">
-                                        <div type="discount" class="css-hi2i2r"><span>12% Discount</span></div>
-                                      </div>
-                                      <div class="css-c8w35i">
-                                        <div class="css-hg3rl0"><a [routerLink]="['/product']" [routerLink]="['/product']">
-                                          <figure class="css-1peg6kw"><img width="100%" class="lazy loaded" alt="Orange" data-src="assets/img/products/orange.jpg" src="assets/img/products/orange.jpg" data-was-processed="true">
-                                          <div class="img-placeholder"></div>
-                                        </figure></a></div>
-                                        <h3 class="css-1pnv3q4"  [ngClass]="{'rtl': is_rtl}"  ><a [routerLink]="['/product']" translate="category.orange"></a></h3>
-                                        <div class="css-3ht5in" [ngClass]="{'f-right': is_rtl}" >
-                                        <div type="discount"  class="css-1xhl7rj">90 <span class="css-k5xvqz">EGP</span></div>
-                                        <div type="discount"  class="css-1xhl7rjd">100 <b>EGP</b></div>
-                                        </div>
-                                        <!-- <p class="css-sjzzz0"  [ngClass]="{'rtl': is_rtl}" translate="category.fruits"></p> -->
-                                        <div class="css-abm2xy">
-                                          <div class="css-1mwn02k d-flex">
-                                            <a [routerLink]="['/wishlist']">
-                                              <h5 style="display: inline;"><span class="lnr lnr-heart"></span></h5><p class="css-du7cmm" translate="cart.add_to"><br><b translate="cart.favourite"></b></p>
-                                          </a>
-                                            <button type="button" class="css-du7cmn" data-testid="button" [routerLink]="['/cart']" translate="cart.add_to_cart"></button>
-                                          </div></div></div></div></div>
-                                </div>
-                    
-                                <div class="col-lg-3">
-                                  <div class="product-item" style="width: 205px;">
-                                    <div points="0"  data-testid="product-card" class="c4-product-card css-1ncs8kg">
-                                      <div class="css-wt0fwe">
-                                        <!-- <div type="discount" class="css-hi2i2r"><span>12% Discount</span></div> -->
-                                      </div>
-                                      <div class="css-c8w35i">
-                                        <div class="css-hg3rl0"><a [routerLink]="['/product']">
-                                          <figure class="css-1peg6kw"><img width="100%" class="lazy loaded" alt="Orange" data-src="assets/img/products/olive-oil.jpg" src="assets/img/products/olive-oil.jpg" data-was-processed="true">
-                                          <div class="img-placeholder"></div>
-                                        </figure></a></div>
-                                        <h3 class="css-1pnv3q4"  [ngClass]="{'rtl': is_rtl}"><a [routerLink]="['/product']" translate="category.olive_oil"></a></h3>
-                                        <div class="css-3ht5in" [ngClass]="{'f-right': is_rtl}" ><div type="discount" class="css-1xhl7rj">90 <span class="css-k5xvqz">EGP</span></div>
-                                        <div type="discount" class="css-1xhl7rjd">95 <b>EGP</b></div>
-                                        </div>
-                                        
-                                        <div class="css-abm2xy">
-                                          <div class="css-1mwn02k d-flex">
-                                            <a [routerLink]="['/wishlist']">
-                                              <h5 style="display: inline;"><span class="lnr lnr-heart"></span></h5><p class="css-du7cmm" translate="cart.add_to"><br><b translate="cart.favourite"></b></p>
-                                          </a>
-                                            <button type="button" class="css-du7cmn" data-testid="button" [routerLink]="['/cart']" translate="cart.add_to_cart"></button>
-                                          </div></div></div></div></div>
-                                </div>
-                    
-                                <div class="col-lg-3">
-                                  <div class="product-item" style="width: 205px;">
-                                    <div points="0"  data-testid="product-card" class="c4-product-card css-1ncs8kg">
-                                      <div class="css-wt0fwe">
-                                        <div type="discount" class="css-hi2i2r"><span>12% Discount</span></div>
-                                      </div>
-                                      <div class="css-c8w35i">
-                                        <div class="css-hg3rl0"><a [routerLink]="['/product']">
-                                          <figure class="css-1peg6kw"><img width="100%" class="lazy loaded" alt="Orange" data-src="assets/img/products/pomegranate.jpg" src="assets/img/products/pomegranate.jpg" data-was-processed="true">
-                                          <div class="img-placeholder"></div>
-                                        </figure></a></div>
-                                        <h3 class="css-1pnv3q4"  [ngClass]="{'rtl': is_rtl}"><a [routerLink]="['/product']" translate="category.pomegranate"></a></h3>
-                    <div class="css-3ht5in" [ngClass]="{'f-right': is_rtl}" ><div type="discount" class="css-1xhl7rj">90 <span class="css-k5xvqz">EGP</span></div>
-                                        <div type="discount" class="css-1xhl7rjd">100 <b>EGP</b></div>
-                                        </div>                    
-                                        <div class="css-abm2xy">
-                                          <div class="css-1mwn02k d-flex">
-                                            <a [routerLink]="['/wishlist']">
-                                              <h5 style="display: inline;"><span class="lnr lnr-heart"></span></h5><p class="css-du7cmm" translate="cart.add_to"><br><b translate="cart.favourite"></b></p>
-                                          </a>
-                                            <button type="button" class="css-du7cmn" data-testid="button" [routerLink]="['/cart']" translate="cart.add_to_cart"></button>
-                                          </div></div></div></div></div>
-                                </div>
-                                <div class="col-lg-3">
-                                  <div class="product-item" style="width: 205px;">
-                                    <div points="0"  data-testid="product-card" class="c4-product-card css-1ncs8kg">
-                                      <div class="css-wt0fwe">
-                                        <!-- <div type="discount" class="css-hi2i2r"><span>12% Discount</span></div> -->
-                                      </div>
-                                      <div class="css-c8w35i">
-                                        <div class="css-hg3rl0"><a [routerLink]="['/product']">
-                                          <figure class="css-1peg6kw"><img width="100%" class="lazy loaded" alt="Orange" data-src="assets/img/products/tomatoes.jpg" src="assets/img/products/tomatoes.jpg" data-was-processed="true">
-                                          <div class="img-placeholder"></div>
-                                        </figure></a></div>
-                                        <h3 class="css-1pnv3q4"  [ngClass]="{'rtl': is_rtl}"><a [routerLink]="['/product']" translate="category.tomato"></a></h3>
-                    <div class="css-3ht5in" [ngClass]="{'f-right': is_rtl}" ><div type="discount" class="css-1xhl7rj">90 <span class="css-k5xvqz">EGP</span></div>
-                                        <div type="discount" class="css-1xhl7rjd">110 <b>EGP</b></div>
-                                        </div>                    
-                                        <div class="css-abm2xy">
-                                          <div class="css-1mwn02k d-flex">
-                                            <a [routerLink]="['/wishlist']">
-                                              <h5 style="display: inline;"><span class="lnr lnr-heart"></span></h5><p class="css-du7cmm" translate="cart.add_to"><br><b translate="cart.favourite"></b></p>
-                                          </a>
-                                            <button type="button" class="css-du7cmn" data-testid="button" [routerLink]="['/cart']" translate="cart.add_to_cart"></button>
-                                          </div></div></div></div></div>
-                                </div>
-                      </div>
-
-
-                      <div class="row mt-3">
+                    <div class="row mt-3">
                         <div class="col-lg-3">
                           <div class="product-item" style="width: 205px;">
                             <div points="0"  data-testid="product-card" class="c4-product-card css-1ncs8kg">
@@ -309,7 +202,7 @@
                                   <div class="img-placeholder"></div>
                                 </figure></a></div>
                                 <h3 class="css-1pnv3q4"  [ngClass]="{'rtl': is_rtl}"  ><a [routerLink]="['/product']" translate="category.orange"></a></h3>
-                                <div class="css-3ht5in" [ngClass]="{'f-right': is_rtl}" >
+                                <div class="css-3ht5in" [ngClass]="{'ff-right': is_rtl}" >
                                 <div type="discount"  class="css-1xhl7rj">90 <span class="css-k5xvqz">EGP</span></div>
                                 <div type="discount"  class="css-1xhl7rjd">100 <b>EGP</b></div>
                                 </div>
@@ -335,7 +228,7 @@
                                   <div class="img-placeholder"></div>
                                 </figure></a></div>
                                 <h3 class="css-1pnv3q4"  [ngClass]="{'rtl': is_rtl}"><a [routerLink]="['/product']" translate="category.olive_oil"></a></h3>
-                                <div class="css-3ht5in" [ngClass]="{'f-right': is_rtl}" ><div type="discount" class="css-1xhl7rj">90 <span class="css-k5xvqz">EGP</span></div>
+                                <div class="css-3ht5in" [ngClass]="{'ff-right': is_rtl}" ><div type="discount" class="css-1xhl7rj">90 <span class="css-k5xvqz">EGP</span></div>
                                 <div type="discount" class="css-1xhl7rjd">95 <b>EGP</b></div>
                                 </div>
                                 
@@ -360,7 +253,7 @@
                                   <div class="img-placeholder"></div>
                                 </figure></a></div>
                                 <h3 class="css-1pnv3q4"  [ngClass]="{'rtl': is_rtl}"><a [routerLink]="['/product']" translate="category.pomegranate"></a></h3>
-            <div class="css-3ht5in" [ngClass]="{'f-right': is_rtl}" ><div type="discount" class="css-1xhl7rj">90 <span class="css-k5xvqz">EGP</span></div>
+            <div class="css-3ht5in" [ngClass]="{'ff-right': is_rtl}" ><div type="discount" class="css-1xhl7rj">90 <span class="css-k5xvqz">EGP</span></div>
                                 <div type="discount" class="css-1xhl7rjd">100 <b>EGP</b></div>
                                 </div>                    
                                 <div class="css-abm2xy">
@@ -383,7 +276,108 @@
                                   <div class="img-placeholder"></div>
                                 </figure></a></div>
                                 <h3 class="css-1pnv3q4"  [ngClass]="{'rtl': is_rtl}"><a [routerLink]="['/product']" translate="category.tomato"></a></h3>
-            <div class="css-3ht5in" [ngClass]="{'f-right': is_rtl}" ><div type="discount" class="css-1xhl7rj">90 <span class="css-k5xvqz">EGP</span></div>
+            <div class="css-3ht5in" [ngClass]="{'ff-right': is_rtl}" ><div type="discount" class="css-1xhl7rj">90 <span class="css-k5xvqz">EGP</span></div>
+                                <div type="discount" class="css-1xhl7rjd">110 <b>EGP</b></div>
+                                </div>                    
+                                <div class="css-abm2xy">
+                                  <div class="css-1mwn02k d-flex">
+                                    <a [routerLink]="['/wishlist']">
+                                      <h5 style="display: inline;"><span class="lnr lnr-heart"></span></h5><p class="css-du7cmm" translate="cart.add_to"><br><b translate="cart.favourite"></b></p>
+                                  </a>
+                                    <button type="button" class="css-du7cmn" data-testid="button" [routerLink]="['/cart']" translate="cart.add_to_cart"></button>
+                                  </div></div></div></div></div>
+                        </div>
+              </div>
+
+
+                      <div class="row mt-3">
+                        <div class="col-lg-3">
+                          <div class="product-item" style="width: 205px;">
+                            <div points="0"  data-testid="product-card" class="c4-product-card css-1ncs8kg">
+                              <div class="css-wt0fwe">
+                                <div type="discount" class="css-hi2i2r"><span>12% Discount</span></div>
+                              </div>
+                              <div class="css-c8w35i">
+                                <div class="css-hg3rl0"><a [routerLink]="['/product']" [routerLink]="['/product']">
+                                  <figure class="css-1peg6kw"><img width="100%" class="lazy loaded" alt="Orange" data-src="assets/img/products/orange.jpg" src="assets/img/products/orange.jpg" data-was-processed="true">
+                                  <div class="img-placeholder"></div>
+                                </figure></a></div>
+                                <h3 class="css-1pnv3q4"  [ngClass]="{'rtl': is_rtl}"  ><a [routerLink]="['/product']" translate="category.orange"></a></h3>
+                                <div class="css-3ht5in" [ngClass]="{'ff-right': is_rtl}" >
+                                <div type="discount"  class="css-1xhl7rj">90 <span class="css-k5xvqz">EGP</span></div>
+                                <div type="discount"  class="css-1xhl7rjd">100 <b>EGP</b></div>
+                                </div>
+                                <!-- <p class="css-sjzzz0"  [ngClass]="{'rtl': is_rtl}" translate="category.fruits"></p> -->
+                                <div class="css-abm2xy">
+                                  <div class="css-1mwn02k d-flex">
+                                    <a [routerLink]="['/wishlist']">
+                                      <h5 style="display: inline;"><span class="lnr lnr-heart"></span></h5><p class="css-du7cmm" translate="cart.add_to"><br><b translate="cart.favourite"></b></p>
+                                  </a>
+                                    <button type="button" class="css-du7cmn" data-testid="button" [routerLink]="['/cart']" translate="cart.add_to_cart"></button>
+                                  </div></div></div></div></div>
+                        </div>
+            
+                        <div class="col-lg-3">
+                          <div class="product-item" style="width: 205px;">
+                            <div points="0"  data-testid="product-card" class="c4-product-card css-1ncs8kg">
+                              <div class="css-wt0fwe">
+                                <!-- <div type="discount" class="css-hi2i2r"><span>12% Discount</span></div> -->
+                              </div>
+                              <div class="css-c8w35i">
+                                <div class="css-hg3rl0"><a [routerLink]="['/product']">
+                                  <figure class="css-1peg6kw"><img width="100%" class="lazy loaded" alt="Orange" data-src="assets/img/products/olive-oil.jpg" src="assets/img/products/olive-oil.jpg" data-was-processed="true">
+                                  <div class="img-placeholder"></div>
+                                </figure></a></div>
+                                <h3 class="css-1pnv3q4"  [ngClass]="{'rtl': is_rtl}"><a [routerLink]="['/product']" translate="category.olive_oil"></a></h3>
+                                <div class="css-3ht5in" [ngClass]="{'ff-right': is_rtl}" ><div type="discount" class="css-1xhl7rj">90 <span class="css-k5xvqz">EGP</span></div>
+                                <div type="discount" class="css-1xhl7rjd">95 <b>EGP</b></div>
+                                </div>
+                                
+                                <div class="css-abm2xy">
+                                  <div class="css-1mwn02k d-flex">
+                                    <a [routerLink]="['/wishlist']">
+                                      <h5 style="display: inline;"><span class="lnr lnr-heart"></span></h5><p class="css-du7cmm" translate="cart.add_to"><br><b translate="cart.favourite"></b></p>
+                                  </a>
+                                    <button type="button" class="css-du7cmn" data-testid="button" [routerLink]="['/cart']" translate="cart.add_to_cart"></button>
+                                  </div></div></div></div></div>
+                        </div>
+            
+                        <div class="col-lg-3">
+                          <div class="product-item" style="width: 205px;">
+                            <div points="0"  data-testid="product-card" class="c4-product-card css-1ncs8kg">
+                              <div class="css-wt0fwe">
+                                <div type="discount" class="css-hi2i2r"><span>12% Discount</span></div>
+                              </div>
+                              <div class="css-c8w35i">
+                                <div class="css-hg3rl0"><a [routerLink]="['/product']">
+                                  <figure class="css-1peg6kw"><img width="100%" class="lazy loaded" alt="Orange" data-src="assets/img/products/pomegranate.jpg" src="assets/img/products/pomegranate.jpg" data-was-processed="true">
+                                  <div class="img-placeholder"></div>
+                                </figure></a></div>
+                                <h3 class="css-1pnv3q4"  [ngClass]="{'rtl': is_rtl}"><a [routerLink]="['/product']" translate="category.pomegranate"></a></h3>
+            <div class="css-3ht5in" [ngClass]="{'ff-right': is_rtl}" ><div type="discount" class="css-1xhl7rj">90 <span class="css-k5xvqz">EGP</span></div>
+                                <div type="discount" class="css-1xhl7rjd">100 <b>EGP</b></div>
+                                </div>                    
+                                <div class="css-abm2xy">
+                                  <div class="css-1mwn02k d-flex">
+                                    <a [routerLink]="['/wishlist']">
+                                      <h5 style="display: inline;"><span class="lnr lnr-heart"></span></h5><p class="css-du7cmm" translate="cart.add_to"><br><b translate="cart.favourite"></b></p>
+                                  </a>
+                                    <button type="button" class="css-du7cmn" data-testid="button" [routerLink]="['/cart']" translate="cart.add_to_cart"></button>
+                                  </div></div></div></div></div>
+                        </div>
+                        <div class="col-lg-3">
+                          <div class="product-item" style="width: 205px;">
+                            <div points="0"  data-testid="product-card" class="c4-product-card css-1ncs8kg">
+                              <div class="css-wt0fwe">
+                                <!-- <div type="discount" class="css-hi2i2r"><span>12% Discount</span></div> -->
+                              </div>
+                              <div class="css-c8w35i">
+                                <div class="css-hg3rl0"><a [routerLink]="['/product']">
+                                  <figure class="css-1peg6kw"><img width="100%" class="lazy loaded" alt="Orange" data-src="assets/img/products/tomatoes.jpg" src="assets/img/products/tomatoes.jpg" data-was-processed="true">
+                                  <div class="img-placeholder"></div>
+                                </figure></a></div>
+                                <h3 class="css-1pnv3q4"  [ngClass]="{'rtl': is_rtl}"><a [routerLink]="['/product']" translate="category.tomato"></a></h3>
+            <div class="css-3ht5in" [ngClass]="{'ff-right': is_rtl}" ><div type="discount" class="css-1xhl7rj">90 <span class="css-k5xvqz">EGP</span></div>
                                 <div type="discount" class="css-1xhl7rjd">110 <b>EGP</b></div>
                                 </div>                    
                                 <div class="css-abm2xy">

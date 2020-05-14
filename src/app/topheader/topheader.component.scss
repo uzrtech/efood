@@ -535,7 +535,7 @@ $small-mobile: 'only screen and (max-width: 479px)';
 
 .logo {
     & img {
-        max-width: 80%;
+        max-width: 70%;
         @media #{$large-mobile} {
             max-width: 120px;
         }

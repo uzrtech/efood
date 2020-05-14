@@ -1,4 +1,9 @@
 
+.ff-right{
+  align-self: auto;
+
+}
+
 .main_title{
     margin-bottom: 0px;
   }
@@ -261,6 +266,7 @@
       font-size: 0.813em;
   }.css-1mwn02k {
       -webkit-box-pack: justify;
+      direction: ltr;
       justify-content: space-between;
       -webkit-box-align: center;
       align-items: center;
