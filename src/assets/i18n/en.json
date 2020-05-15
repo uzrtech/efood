@@ -132,6 +132,18 @@
         "filters":"Filters",
         "categories":"Categories",
         "apply":"Apply",
-        "price":"Price"
+        "price":"Price",
+        "reset":"Reset",
+        "filter":"Filter",
+        "brand":"Brand",
+        "sort_by_name":"Sort By Price:",
+        "sort_by_price":"Sort By Price:",
+        "Ascending":"Ascending",
+        "descending":"Descending",
+        "high_to_low":"High to Low",
+        "low_to_high":"Low to High"
+
+        
+
     }
 }

@@ -20,14 +20,14 @@
 			<div id="stick_here"></div>		
 			<div class="toolbox elemento_stick">
 				<div class="container">
-				<ul class="clearfix">
+				<ul class="clearfix" [ngClass]="{'rtl': is_rtl}">
 					<li>
 						<div class="sort_select">
 							<select name="sort" id="sort">
-                                    <option value="rating">Sort by Name Ascending</option>
-                                    <option value="date">Sort by Name Descending</option>
-                                    <option value="price">Sort by price: Low to High</option>
-                                    <option value="price-desc">Sort by price: High to Low
+                                    <option value="rating" translate="search.sort_by_name"><p translate="search.ascending"></p></option>
+                                    <option value="date" translate="search.sort_by_name"><p translate="search.descending"></p></option>
+                                    <option value="price" translate="search.sort_by_price"><p translate="search.low_to_high"></p></option>
+                                    <option value="price-desc" translate="search.sort_by_price"><p translate="search.high_to_low"></p></option>
 							</select>
 						</div>
 					</li>
@@ -52,7 +52,7 @@
 				    <div class="filter_col"> 
 				        <div class="inner_bt"><a href="#" class="open_filters"><i class="ti-close"></i></a></div>
 				        <div class="filter_type version_2">
-				            <h4><a href="#filter_1" data-toggle="collapse" class="closed">Categories</a></h4>
+				            <h4><a href="#filter_1" data-toggle="collapse" class="closed" translate="search.categories"></a></h4>
 				            <div class="collapse show" id="filter_1">
 				                <ul>
 				                    <li>
@@ -92,7 +92,7 @@
 				        </div>
 						<!-- /filter_type -->
 						<div class="filter_type version_2">
-				            <h4><a href="#filter_4" data-toggle="collapse" class="closed">Price</a></h4>
+				            <h4><a href="#filter_4" data-toggle="collapse" class="closed" translate="search.price"></a></h4>
 				            <div class="collapse" id="filter_4">
 				                <ul>
 				                    <li>
@@ -124,7 +124,7 @@
 				        </div>
 				        <!-- /filter_type -->
 						<div class="filter_type version_2">
-						<h4><a href="#filter_2" data-toggle="collapse" class="closed">Brand</a></h4>
+						<h4><a href="#filter_2" data-toggle="collapse" class="closed" translate="search.brand"></a></h4>
 				            <div class="collapse" id="filter_2">
 				                <ul>
 				                    <li>
@@ -183,7 +183,7 @@
 				        <!-- /filter_type -->
 				        
 				        <div class="buttons">
-				            <a href="#0" class="btn_1">Filter</a> <a href="#0" class="btn_1 gray">Reset</a>
+				            <a href="#0" class="btn_1" translate="search.filter"></a> <a href="#0" class="btn_1 gray" translate="search.reset"></a>
 				        </div>
 				    </div>
 				</aside>
