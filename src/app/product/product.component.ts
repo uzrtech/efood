@@ -1,3 +1,4 @@
+import { HomeService } from './../home.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  constructor() { }
+  public is_rtl: Boolean = true;
+constructor(private HomeService: HomeService) { }
 
-  ngOnInit(): void {
+ ngOnInit(): void {
+  this.HomeService.rtl_Subscription().subscribe(value=>{
+    this.is_rtl=value;
+  })
   }
-
 }

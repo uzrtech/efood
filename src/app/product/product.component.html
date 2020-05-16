@@ -1,29 +1,32 @@
 <main class="bg_gray">
-    <div class="container margin_30">
-        <div class="page_header">
-            <div class="breadcrumbs">
-                <ul>
-                    <li><a href="#" translate="home.home"></a></li>
-                    <li><a href="#" translate="category.category"></a></li>
-                    <li translate="category.fruits"></li>
-                </ul>
+    <div class="maf-container margin_30">
+        <div class="row" [ngClass]="{'is_rtl_text': is_rtl}">
+            <div class="page_header">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="#" translate="home.home"></a></li>
+                        <li><a href="#" translate="category.category"></a></li>
+                        <li translate="category.fruits"></li>
+                    </ul>
+                </div>
+                <h1 translate="category.orange"></h1>
             </div>
-            <h1 translate="category.orange"></h1>
         </div>
+        
         <!-- /page_header -->
         <!-- /row -->
     </div>
     <!-- /container -->
     
     <div class="bg_white">
-        <div class="container margin_60_35">
+        <div class="maf-container margin_60_35">
             <div class="row justify-content-between">
                 <div class="col-lg-5">
                     <div>
                         <img class="item" src="assets/img/products/orange.jpg" alt="">
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" [ngClass]="{'is_rtl_text': is_rtl}">
                     <div class="prod_info version_2">
                         <!-- <span class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i><em>4 reviews</em></span> -->
                         <p translate="cart.dummy_text"><br></p>

@@ -17,8 +17,6 @@ export class FooterComponent implements OnInit {
   };
   changeLangage(lang: string) {
     this.HomeService.Change_Language(lang);
-    
-    
   }
 
 }
